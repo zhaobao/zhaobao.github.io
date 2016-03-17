@@ -15,16 +15,14 @@
   background-color: #fffff9 !important;
   border: none !important; }
 
-#ds-thread #ds-reset .ds-post-options {
-  top: 0 !important; }
-
 #ds-thread #ds-reset .ds-post-options .ds-sync {
-  right: 120px !important; }
+  right: 120px !important;
+  top: 0 !important; }
 
 #ds-thread #ds-reset .ds-post-button {
   border-radius: 0 !important;
   background-color: #505050 !important;
-  width: auto !important;
+  width: 100px !important;
   height: 30px !important; }
 
 body {
