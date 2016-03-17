@@ -8,6 +8,9 @@
 #ds-share, .ds-meta {
   display: none; }
 
+#ds-thread #ds-reset .ds-login-buttons .ds-service-list li {
+  height: 24px !important; }
+
 body {
   background-color: #FFFFF9;
   color: #444;
