@@ -5,9 +5,6 @@
  * @version 2.0
  * @link http://chopstack.com
  */
-#ds-thread #ds-reset .ds-login-buttons p {
-  line-height: 35px; }
-
 #ds-share, .ds-meta {
   display: none; }
 
@@ -587,7 +584,7 @@ div {
 
 #ds-thread #ds-reset .ds-login-buttons p {
   color: #999;
-  line-height: 36px; }
+  line-height: 36px !important; }
 
 #ds-thread #ds-reset .ds-login-buttons .ds-service-list li {
   height: 28px; }
