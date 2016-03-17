@@ -154,7 +154,8 @@ a:focus {
   color: #888; }
 
 .post {
-  padding: 25px 0 15px; }
+  padding: 25px 0 15px;
+  border-bottom: 1px dotted #ddd; }
   .post .post-title {
     margin: 0;
     color: #555;

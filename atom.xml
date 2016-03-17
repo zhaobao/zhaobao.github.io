@@ -44,9 +44,9 @@
     <link href="http://blog.zhishoumowen.com/2016/03/17/web-scroll/"/>
     <id>http://blog.zhishoumowen.com/2016/03/17/web-scroll/</id>
     <published>2016-03-17T03:14:51.000Z</published>
-    <updated>2016-03-17T08:06:12.000Z</updated>
+    <updated>2016-03-17T15:34:11.000Z</updated>
     
-    <content type="html">&lt;p&gt;这是一个比较恶心的问题,当滚动条出现的时候,页面的可用空间会被浏览器压缩,如果你很在乎细节,如果你盯着屏幕看,就会发现页面突然间往右平移了,这个问题对于一些吹毛求疵的产品们,和一些设计们来说是不能容忍的,当然对于有强迫症的我来说,是能容忍的…&lt;/p&gt;
+    <content type="html">&lt;p&gt;这是一个比较恶心的问题,当滚动条出现的时候,页面的可用空间会被浏览器压缩,如果你很在乎细节,如果你盯着屏幕看,就会发现页面突然间往左平移了,这个问题对于一些吹毛求疵的产品们,和一些设计们来说是不能容忍的,当然对于有强迫症的我来说,&lt;br&gt;是能容忍的…&lt;/p&gt;
 &lt;p&gt;解决这个问题,有4种方案,没错,有4种方案:&lt;/p&gt;
 &lt;p&gt;1 如果你知道页面的高度,那可以直接强制出现滚动条&lt;br&gt;&lt;figure class=&quot;highlight css&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;selector-class&quot;&gt;.container&lt;/span&gt; &amp;#123; &lt;span class=&quot;attribute&quot;&gt;overflow-y&lt;/span&gt;: scroll; &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
 &lt;p&gt;2 如果你不知道,而且页面还会变化,你又是一个现在浏览器使用者,注重现代人的体验,那么有酷炫拽 + 掉渣天的CSS3解决&lt;br&gt;&lt;figure class=&quot;highlight css&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;selector-class&quot;&gt;.container&lt;/span&gt; &amp;#123; &lt;span class=&quot;attribute&quot;&gt;padding-left&lt;/span&gt;: &lt;span class=&quot;built_in&quot;&gt;calc&lt;/span&gt;(100vw - 100% );&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
@@ -62,8 +62,8 @@
     
     <summary type="html">
     
-      &lt;p&gt;这是一个比较恶心的问题,当滚动条出现的时候,页面的可用空间会被浏览器压缩,如果你很在乎细节,如果你盯着屏幕看,就会发现页面突然间往右平移了,这个问题对于一些吹毛求疵的产品们,和一些设计们来说是不能容忍的,当然对于有强迫症的我来说,是能容忍的…&lt;/p&gt;
-&lt;p&gt;解决这个问题,有
+      &lt;p&gt;这是一个比较恶心的问题,当滚动条出现的时候,页面的可用空间会被浏览器压缩,如果你很在乎细节,如果你盯着屏幕看,就会发现页面突然间往左平移了,这个问题对于一些吹毛求疵的产品们,和一些设计们来说是不能容忍的,当然对于有强迫症的我来说,&lt;br&gt;是能容忍的…&lt;/p&gt;
+&lt;p&gt;解决这个
     
     </summary>
     
