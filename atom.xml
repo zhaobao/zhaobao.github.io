@@ -40,11 +40,11 @@
   </entry>
   
   <entry>
-    <title>术·滚动条造成的页面偏移闪动问题</title>
+    <title>术·滚动条造成的页面偏移闪动</title>
     <link href="http://blog.zhishoumowen.com/2016/03/17/web-scroll/"/>
     <id>http://blog.zhishoumowen.com/2016/03/17/web-scroll/</id>
     <published>2016-03-17T03:14:51.000Z</published>
-    <updated>2016-03-17T03:34:19.000Z</updated>
+    <updated>2016-03-17T08:06:12.000Z</updated>
     
     <content type="html">&lt;p&gt;这是一个比较恶心的问题,当滚动条出现的时候,页面的可用空间会被浏览器压缩,如果你很在乎细节,如果你盯着屏幕看,就会发现页面突然间往右平移了,这个问题对于一些吹毛求疵的产品们,和一些设计们来说是不能容忍的,当然对于有强迫症的我来说,是能容忍的…&lt;/p&gt;
 &lt;p&gt;解决这个问题,有4种方案,没错,有4种方案:&lt;/p&gt;
