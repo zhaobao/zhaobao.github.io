@@ -12,20 +12,20 @@
   height: 24px !important; }
 
 #ds-thread #ds-reset .ds-post-options {
-  background-color: #fffff9;
-  border: none; }
+  background-color: #fffff9 !important;
+  border: none !important; }
 
 #ds-thread #ds-reset .ds-post-options {
-  top: 0; }
+  top: 0 !important; }
 
 #ds-thread #ds-reset .ds-post-options .ds-sync {
-  right: 120px; }
+  right: 120px !important; }
 
 #ds-thread #ds-reset .ds-post-button {
-  border-radius: 0;
-  background-color: #505050;
-  width: auto;
-  height: 30px; }
+  border-radius: 0 !important;
+  background-color: #505050 !important;
+  width: auto !important;
+  height: 30px !important; }
 
 body {
   background-color: #FFFFF9;
