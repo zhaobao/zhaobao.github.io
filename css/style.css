@@ -142,11 +142,6 @@ a:focus {
         line-height: 16px;
         border: 1px solid #bbb;
         width: 65%;
-        -webkit-border-radius: 5px;
-        -moz-border-radius: 5px;
-        -ms-border-radius: 5px;
-        -o-border-radius: 5px;
-        border-radius: 5px;
         -webkit-box-shadow: none;
         -moz-box-shadow: none;
         box-shadow: none; }
@@ -519,7 +514,6 @@ div {
   margin: -10px 0;
   padding: 5px 10px;
   border: 1px solid #ddd;
-  border-radius: 5px;
   float: right; }
   .readmore a:after {
     font-family: "FontAwesome";
