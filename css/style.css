@@ -11,6 +11,22 @@
 #ds-thread #ds-reset .ds-login-buttons .ds-service-list li {
   height: 24px !important; }
 
+#ds-thread #ds-reset .ds-post-options {
+  background-color: #fffff9;
+  border: none; }
+
+#ds-thread #ds-reset .ds-post-options {
+  top: 0; }
+
+#ds-thread #ds-reset .ds-post-options .ds-sync {
+  right: 120px; }
+
+#ds-thread #ds-reset .ds-post-button {
+  border-radius: 0;
+  background-color: #505050;
+  width: auto;
+  height: 30px; }
+
 body {
   background-color: #FFFFF9;
   color: #444;
