@@ -5,6 +5,9 @@
  * @version 2.0
  * @link http://chopstack.com
  */
+#ds-share, .ds-meta {
+  display: none; }
+
 body {
   background-color: #FFFFF9;
   color: #444;
