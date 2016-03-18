@@ -19,6 +19,9 @@
   right: 120px !important;
   top: 0 !important; }
 
+#ds-thread.ds-narrow #ds-reset .ds-post-options {
+  margin-right: 30px !important; }
+
 #ds-thread #ds-reset .ds-post-button {
   border-radius: 0 !important;
   background-color: #505050 !important;
