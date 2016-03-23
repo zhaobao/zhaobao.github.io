@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.zhishoumowen.com/"/>
-  <updated>2016-03-18T15:47:19.000Z</updated>
+  <updated>2016-03-23T10:23:12.000Z</updated>
   <id>http://blog.zhishoumowen.com/</id>
   
   <author>
@@ -14,6 +14,38 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>从UI设计图到代码尺寸</title>
+    <link href="http://blog.zhishoumowen.com/2016/03/23/shu-web-ui/"/>
+    <id>http://blog.zhishoumowen.com/2016/03/23/shu-web-ui/</id>
+    <published>2016-03-23T10:20:51.000Z</published>
+    <updated>2016-03-23T10:23:12.000Z</updated>
+    
+    <content type="html">&lt;h1 id=&quot;UI标尺与适配&quot;&gt;&lt;a href=&quot;#UI标尺与适配&quot; class=&quot;headerlink&quot; title=&quot;UI标尺与适配&quot;&gt;&lt;/a&gt;UI标尺与适配&lt;/h1&gt;&lt;p&gt;网页中没有类似android额dp的东西，因此，如果设计图是120px，那么不论什么样的尺寸下，都是120px，这样体验是不好的，比如在一个&amp;gt;1000px的设备上，120px是一个不从的左侧栏宽度，但是，倒是只有320px的设备上，就显得太大了，应该是能够等比缩放比较好，比如40px；&lt;/p&gt;
+&lt;p&gt;比例的概念是不错的，问题是，网页上好多空间使用比分比是比较困难的，首先你把UI图都换算成比例，其次，页面上的元素的比例依据是父类元素，计算起来就吐血了。&lt;/p&gt;
+&lt;p&gt;有没有一个不是相对父元素的东西，有，那就是rem&lt;/p&gt;
+&lt;p&gt;这个单位是相对顶级的font-size来说的，好了，实践的解决方法：根据实际的屏幕尺寸，动态计算顶级的font-size&lt;/p&gt;
+&lt;p&gt;而且最好做到换算起来简单，公式如下：&lt;/p&gt;
+&lt;p&gt;if (device-width &amp;gt; ui-width) {&lt;br&gt;    font-size: 100px;&lt;br&gt;} else {&lt;br&gt;    font-size: device-width * 100 / ui-width&lt;br&gt;}&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;设计稿: 640px(iphone 6p)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;按钮: 120px;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;屏幕尺寸: 500px;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;计算：&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;font-size: 500 * 100 / 640;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;button-width: 1.2rem( = 1.2 * 500 * 100 / 640 = 93.75px)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h2 id=&quot;字体&quot;&gt;&lt;a href=&quot;#字体&quot; class=&quot;headerlink&quot; title=&quot;字体&quot;&gt;&lt;/a&gt;字体&lt;/h2&gt;&lt;p&gt;字体不同于布局，自己不能随着尺寸变化而变化，或者说，只能大，不能小，因为太小了根本看不着，淘宝的字体大小是固定的。&lt;/p&gt;
+&lt;h2 id=&quot;Ratio-问题&quot;&gt;&lt;a href=&quot;#Ratio-问题&quot; class=&quot;headerlink&quot; title=&quot;Ratio 问题&quot;&gt;&lt;/a&gt;Ratio 问题&lt;/h2&gt;&lt;p&gt;还有一个问题，在不同的ratio下，1px的感觉是不一样的，比如，在一个ratio = 2 的分辨率下，会用两个像素点来作为1px&lt;br&gt;对图片的影响比较大，如果在一个100x100px的地方，放一个100x100px的图，在ration=1的情况下没问题，但是在ratio=2的情况下，就会显示模糊了，当然了，这个与标尺无关，需要提供额外的资源&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;window.devicePixelRatio; // mac 显示 为 2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+</content>
+    
+    <summary type="html">
+    
+      从设计师手里拿到一张UI尺寸图，应该怎样转换为代码里的尺寸？应该怎样保证不同尺寸屏幕下的体验一致？
+    
+    </summary>
+    
+      <category term="术" scheme="http://blog.zhishoumowen.com/categories/%E6%9C%AF/"/>
+    
+    
+      <category term="前端, UI" scheme="http://blog.zhishoumowen.com/tags/%E5%89%8D%E7%AB%AF-UI/"/>
+    
+  </entry>
   
   <entry>
     <title>扯·hello</title>
