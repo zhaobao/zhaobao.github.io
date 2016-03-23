@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.zhishoumowen.com/"/>
-  <updated>2016-03-23T10:33:09.000Z</updated>
+  <updated>2016-03-23T10:34:24.000Z</updated>
   <id>http://blog.zhishoumowen.com/</id>
   
   <author>
@@ -20,9 +20,9 @@
     <link href="http://blog.zhishoumowen.com/2016/03/23/shu-web-ui/"/>
     <id>http://blog.zhishoumowen.com/2016/03/23/shu-web-ui/</id>
     <published>2016-03-23T10:20:51.000Z</published>
-    <updated>2016-03-23T10:33:09.000Z</updated>
+    <updated>2016-03-23T10:34:24.000Z</updated>
     
-    <content type="html">&lt;h1 id=&quot;UI标尺与适配&quot;&gt;&lt;a href=&quot;#UI标尺与适配&quot; class=&quot;headerlink&quot; title=&quot;UI标尺与适配&quot;&gt;&lt;/a&gt;UI标尺与适配&lt;/h1&gt;&lt;p&gt;网页中没有类似android额dp的东西，因此，如果设计图是120px，那么不论什么样的尺寸下，都是120px，这样体验是不好的，比如在一个&amp;gt;1000px的设备上，120px是一个不从的左侧栏宽度，但是，倒是只有320px的设备上，就显得太大了，应该是能够等比缩放比较好，比如40px；&lt;/p&gt;
+    <content type="html">&lt;p&gt;网页中没有类似android额dp的东西，因此，如果设计图是120px，那么不论什么样的尺寸下，都是120px，这样体验是不好的，比如在一个&amp;gt;1000px的设备上，120px是一个不从的左侧栏宽度，但是，倒是只有320px的设备上，就显得太大了，应该是能够等比缩放比较好，比如40px；&lt;/p&gt;
 &lt;p&gt;比例的概念是不错的，问题是，网页上好多空间使用比分比是比较困难的：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;首先你把UI图都换算成比例&lt;/li&gt;
@@ -128,8 +128,8 @@
   
   <entry>
     <title>术·滚动条造成的页面偏移闪动</title>
-    <link href="http://blog.zhishoumowen.com/2016/03/17/shu.webscroll/"/>
-    <id>http://blog.zhishoumowen.com/2016/03/17/shu.webscroll/</id>
+    <link href="http://blog.zhishoumowen.com/2016/03/17/shu-web-scroll/"/>
+    <id>http://blog.zhishoumowen.com/2016/03/17/shu-web-scroll/</id>
     <published>2016-03-17T03:14:51.000Z</published>
     <updated>2016-03-17T15:34:11.000Z</updated>
     
