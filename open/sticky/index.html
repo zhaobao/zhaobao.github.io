@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>假的sticky header</title>
+    <style>
+        html {
+            font-size: 16px;
+        }
+        body {
+            margin: 0;
+            position: relative;
+            font-family: "Menlo", "Consolas", "Bitstream Vera Sans Mono", "DejaVu Sans Mono", "Monaco", monospace;
+            background-color: #fffff9;
+        }
+        header {
+            padding: 2rem;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 9;
+            border-bottom: 1px solid rgba(255, 255, 255, .3);
+            font-size: 1.5rem;
+            color: white;
+            transition: background-color 0.3s ease-out, color 0.6s ease-out, padding 0.3s ease-out;
+        }
+        header.active {
+            background-color: rgba(255, 255, 255, .8);
+            padding: 1.5rem 2rem;
+            color: black;
+        }
+        .header {
+            position: relative;
+            min-height: 40rem;
+            background: url("bg.jpg") no-repeat fixed;
+            background-size: cover;
+            /*background: linear-gradient(90deg, #A22076 50%, #973444);*/
+        }
+        .header2 {
+            background-image: url("bg2.jpg");
+        }
+        .header3 {
+            background-image: url("bg3.jpg");
+        }
+        .header4 {
+            background-image: url("bg4.jpg");
+        }
+        .header5 {
+            background-image: url("bg5.jpg");
+        }
+        .divider {
+            position: relative;
+            height: 10em;
+        }
+        .divider::before {
+            position: absolute;
+            content: "";
+            display: inline-block;
+            height: 10em;
+            width: 0;
+            border-right: 5px solid #ccc;
+            left: 50%;
+        }
+        .btn {
+            position: absolute;
+            display: inline-block;
+            padding: 0.8em 2em;
+            border: 1px solid rgba(255, 255, 255, 0.9);
+            border-radius: 4px;
+            color: white;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .btn:hover {
+            color: black;
+            background-color: white;
+            cursor: pointer;
+            transition: background-color 0.3s ease-out, color 0.6s ease-out;
+        }
+    </style>
+</head>
+<body>
+
+<header>Header</header>
+<div class="header">
+    <div class="btn">你知不知道</div>
+</div>
+<div class="divider"></div>
+<div class="header header2">
+    <div class="btn">思念一个人的滋味</div>
+</div>
+<div class="divider"></div>
+<div class="header header3">
+    <div class="btn">就像喝了一杯冰凉的水</div>
+</div>
+<div class="divider"></div>
+<div class="header header2">
+    <div class="btn">然后用很长很长的时间</div>
+</div>
+<div class="divider"></div>
+<div class="header header4">
+    <div class="btn">一点一点</div>
+</div>
+<div class="divider"></div>
+<div class="header header5">
+    <div class="btn">流成热泪!</div>
+</div>
+<script>
+
+    // 虽然是假的sticky header，不过效果真心很赞
+    var header = document.getElementsByTagName('header')[0];
+//    var headerHeight = header.offsetHeight;
+    var widowScroll = 0;
+    function changeHeader() {
+        if (widowScroll > 0) {
+            header.classList.add('active');
+        } else if (0 == widowScroll) {
+            header.classList.remove('active');
+        }
+    }
+    window.addEventListener('scroll', function() {
+        widowScroll = this.scrollY;
+        window.requestAnimationFrame(changeHeader);
+    }, false);
+</script>
+</body>
+</html>
