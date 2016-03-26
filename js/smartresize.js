@@ -32,8 +32,10 @@
 
     //
     $(document).ready(function() {
-        $('a[href^="http"]').each(function() {
-            $(this).attr('target', '_blank');
-        });
+        if (window.loaction.href.indexOf("/blog.zhishoumowen.com/about/") > 0) {
+            $('.post-content').('a[href]').each(function() {
+                $(this).attr('target', '_blank');
+            });
+        }
     });
 })(jQuery, 'smartresize');
