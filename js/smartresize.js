@@ -29,4 +29,11 @@
     jQuery.fn[sr] = function(fn) {
         return fn ? this.bind('resize', debounce(fn)) : this.trigger(sr);
     };
+
+    //
+    $(document).ready(function() {
+        $('a[href^="http"]').each(function() {
+            $(this).attr('target', '_blank');
+        });
+    });
 })(jQuery, 'smartresize');
