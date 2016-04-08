@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.zhishoumowen.com/"/>
-  <updated>2016-04-08T14:19:44.000Z</updated>
+  <updated>2016-04-08T14:37:26.000Z</updated>
   <id>http://blog.zhishoumowen.com/</id>
   
   <author>
@@ -20,10 +20,19 @@
     <link href="http://blog.zhishoumowen.com/2016/04/08/open-music/"/>
     <id>http://blog.zhishoumowen.com/2016/04/08/open-music/</id>
     <published>2016-04-08T13:53:51.000Z</published>
-    <updated>2016-04-08T14:19:44.000Z</updated>
+    <updated>2016-04-08T14:37:26.000Z</updated>
     
     <content type="html">&lt;p&gt;近来学习React，脑袋一热，为了向良心软件网易云音乐致敬，写了个React版本，部分图片和音乐是从网上获取，再次致敬。&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&quot;截图为证&quot;&gt;&lt;a href=&quot;#截图为证&quot; class=&quot;headerlink&quot; title=&quot;截图为证&quot;&gt;&lt;/a&gt;截图为证&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;music.png&quot; alt=&quot;截图为证&quot;&gt;&lt;br&gt;多说无益，点击链接看效果&lt;br&gt;&lt;a href=&quot;/open/music/?target=blank&quot;&gt;猛戳下面链接 music&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;截图为证&quot;&gt;&lt;a href=&quot;#截图为证&quot; class=&quot;headerlink&quot; title=&quot;截图为证&quot;&gt;&lt;/a&gt;截图为证&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;music.png&quot; alt=&quot;截图为证&quot;&gt;&lt;/p&gt;
+&lt;h2 id=&quot;Demo地址&quot;&gt;&lt;a href=&quot;#Demo地址&quot; class=&quot;headerlink&quot; title=&quot;Demo地址&quot;&gt;&lt;/a&gt;Demo地址&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;/open/music/?target=blank&quot;&gt;猛戳下面链接 music&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;用到的技术栈&quot;&gt;&lt;a href=&quot;#用到的技术栈&quot; class=&quot;headerlink&quot; title=&quot;用到的技术栈&quot;&gt;&lt;/a&gt;用到的技术栈&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;H5&lt;/li&gt;
+&lt;li&gt;CSS3&lt;/li&gt;
+&lt;li&gt;React&lt;/li&gt;
+&lt;li&gt;Flux&lt;/li&gt;
+&lt;li&gt;Webpack&lt;/li&gt;
+&lt;li&gt;Gulp&lt;h2 id=&quot;网易云音乐App设计很多页面，暂时开发到这&quot;&gt;&lt;a href=&quot;#网易云音乐App设计很多页面，暂时开发到这&quot; class=&quot;headerlink&quot; title=&quot;网易云音乐App设计很多页面，暂时开发到这~&quot;&gt;&lt;/a&gt;网易云音乐App设计很多页面，暂时开发到这~&lt;/h2&gt;&lt;/li&gt;
+&lt;/ul&gt;
 </content>
     
     <summary type="html">
