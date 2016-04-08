@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.zhishoumowen.com/"/>
-  <updated>2016-04-04T05:14:21.000Z</updated>
+  <updated>2016-04-08T14:10:54.000Z</updated>
   <id>http://blog.zhishoumowen.com/</id>
   
   <author>
@@ -16,15 +16,39 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>术·网易云音乐React版(非官方)</title>
+    <link href="http://blog.zhishoumowen.com/2016/04/08/open-music/"/>
+    <id>http://blog.zhishoumowen.com/2016/04/08/open-music/</id>
+    <published>2016-04-08T13:53:51.000Z</published>
+    <updated>2016-04-08T14:10:54.000Z</updated>
+    
+    <content type="html">&lt;p&gt;近来学习React，脑袋一热，为了向良心软件网易云音乐致敬，写了个React版本，部分图片和音乐是从网上获取，再次致敬。&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;截图为证&quot;&gt;&lt;a href=&quot;#截图为证&quot; class=&quot;headerlink&quot; title=&quot;截图为证&quot;&gt;&lt;/a&gt;截图为证&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;music.png&quot; alt=&quot;截图为证&quot;&gt;&lt;br&gt;多说无益，点击链接看效果&lt;br&gt;&lt;a href=&quot;/open/music/&quot;&gt;猛戳下面链接 music&lt;/a&gt;&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;近来学习React，脑袋一热，为了向良心软件网易云音乐致敬，写了个React版本，部分图片和音乐是从网上获取，再次致敬。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="术" scheme="http://blog.zhishoumowen.com/categories/%E6%9C%AF/"/>
+    
+    
+      <category term="开源项目 前端 React" scheme="http://blog.zhishoumowen.com/tags/%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE-%E5%89%8D%E7%AB%AF-React/"/>
+    
+  </entry>
+  
+  <entry>
     <title>悟·佛曰苦</title>
     <link href="http://blog.zhishoumowen.com/2016/04/04/tongku/"/>
     <id>http://blog.zhishoumowen.com/2016/04/04/tongku/</id>
     <published>2016-04-04T05:09:49.000Z</published>
-    <updated>2016-04-04T05:14:21.000Z</updated>
+    <updated>2016-04-04T05:16:58.000Z</updated>
     
     <content type="html">&lt;p&gt;佛曰，人生有八苦。&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;生&lt;br&gt;老&lt;br&gt;病&lt;br&gt;死&lt;br&gt;爱别离&lt;br&gt;怨憎会&lt;br&gt;求不得&lt;br&gt;五阴炽盛&lt;/p&gt;
-&lt;p&gt;在你人生的某个阶段，总要体会这些苦。&lt;/p&gt;
+&lt;p&gt;在你人生的某个阶段，总要体会这些苦，逃不过的。&lt;/p&gt;
 </content>
     
     <summary type="html">
