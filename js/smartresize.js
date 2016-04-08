@@ -32,10 +32,14 @@
 
     //
     $(document).ready(function() {
-        if (window.location.href.indexOf("/blog.zhishoumowen.com/about/") > 0) {
-            $('.post-content').find('a[href]').each(function() {
-                $(this).attr('target', '_blank');
-            });
+        var links = document.getElementsByTagName('a');
+        if (links.length > 0) {
+            for (var i = 0, len = links.length; i < len; i++) {
+                var a = links[i];
+                if (/target=blank/.test(a.getAttribute('href'))) {
+                    a.setAttribute('target', '_blank');
+                }
+            }
         }
     });
 })(jQuery, 'smartresize');
