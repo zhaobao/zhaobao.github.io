@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.zhishoumowen.com/"/>
-  <updated>2016-04-12T16:50:04.000Z</updated>
+  <updated>2016-04-15T06:26:51.000Z</updated>
   <id>http://blog.zhishoumowen.com/</id>
   
   <author>
@@ -14,6 +14,59 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>术·北京互联网公司分布(前端)</title>
+    <link href="http://blog.zhishoumowen.com/2016/04/13/it-work-map/"/>
+    <id>http://blog.zhishoumowen.com/2016/04/13/it-work-map/</id>
+    <published>2016-04-12T17:06:32.000Z</published>
+    <updated>2016-04-15T06:26:51.000Z</updated>
+    
+    <content type="html">&lt;p&gt;在北京孩子，每天上下班很痛苦，挤地铁，等公交，吃早饭。。。&lt;br&gt;想做一个map，大体统计下拉勾网上互联网公司的位置，目的是为了找一个比较好方便的租房位置，以下是成果和构思过程。&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;可行性分析&quot;&gt;&lt;a href=&quot;#可行性分析&quot; class=&quot;headerlink&quot; title=&quot;可行性分析&quot;&gt;&lt;/a&gt;可行性分析&lt;/h2&gt;&lt;p&gt;一开始想做个静态地图，似乎效果不好，如果能取到地理位置，然后调用 map api 就好了，因此：&lt;/p&gt;
+&lt;p&gt;1 尝试拿到拉勾网互联网公司的经度纬度&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;列表数据比较容易获取, 可以通过模拟Ajax请求搞定&lt;/li&gt;
+&lt;li&gt;详情数据做了页面静态化，需要拿到positionId，然后得到页面，然后通过解析页面来获取位置信息&lt;/li&gt;
+&lt;li&gt;为了防止被封杀，自己做文件缓存&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;2 调用百度Map Api，进行标记&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;因为拉钩上并没有具体的经纬度信息，因此需要从地址解析到经纬度的结构&lt;/li&gt;
+&lt;li&gt;需要在地图上增加标记&lt;/li&gt;
+&lt;li&gt;需要在标记上增加公司名称的标签&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;3 增加位置房屋价格信息&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;抓取比如我爱我家的数据&lt;/li&gt;
+&lt;li&gt;如何通过经纬度得到比较密集的区域？&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;成果以及结论&quot;&gt;&lt;a href=&quot;#成果以及结论&quot; class=&quot;headerlink&quot; title=&quot;成果以及结论&quot;&gt;&lt;/a&gt;成果以及结论&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;互联网公司大部分分布在朝阳区和海淀区&lt;/li&gt;
+&lt;li&gt;从地铁上看，主要集中在地铁国贸、中关村以及望京附近&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href=&quot;/open/map/?target=blank&quot;&gt;北京前端互联网公司分布图&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;技术栈&quot;&gt;&lt;a href=&quot;#技术栈&quot; class=&quot;headerlink&quot; title=&quot;技术栈&quot;&gt;&lt;/a&gt;技术栈&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Python&lt;/li&gt;
+&lt;li&gt;Scrapy&lt;/li&gt;
+&lt;li&gt;H5&lt;/li&gt;
+&lt;li&gt;CSS&lt;/li&gt;
+&lt;li&gt;Javascript&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;在北京孩子，每天上下班很痛苦，挤地铁，等公交，吃早饭。。。&lt;br&gt;想做一个map，大体统计下拉勾网上互联网公司的位置，目的是为了找一个比较好方便的租房位置，以下是成果和构思过程。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="术" scheme="http://blog.zhishoumowen.com/categories/%E6%9C%AF/"/>
+    
+    
+      <category term="前端 扯淡" scheme="http://blog.zhishoumowen.com/tags/%E5%89%8D%E7%AB%AF-%E6%89%AF%E6%B7%A1/"/>
+    
+  </entry>
   
   <entry>
     <title>歌·痛彻心扉</title>
