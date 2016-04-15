@@ -2,3 +2,8 @@
 /**
  * 自己添加的css
  */
+#ds-thread #ds-reset .ds-replybox .ds-avatar {
+  margin: 0 !important; }
+
+#ds-thread #ds-reset ul.ds-comments-tabs .ds-service-icon {
+  display: none !important; }
