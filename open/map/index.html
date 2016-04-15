@@ -56,6 +56,7 @@
                             fineData.push(json[i]);
                         }
                         Map.parseLocation2(fineData);
+                        Map.getReact(fineData);
                     }
                 };
                 xhr.onerror = function(e) {
@@ -73,6 +74,91 @@
                     var pp = new BMap.Marker(point, {icon: Map.icon});
                     Map.map.addOverlay(pp);
                 }
+            },
+            getReact: function(fineData) {
+                var maxLat = 0, maxLng = 0, minLat = 0, minLng = 0;
+                for (var i = 0, len = fineData.length; i < len; i++) {
+                    if (fineData[i]['lat'] > maxLat) {
+                        maxLat = fineData[i]['lat'];
+                    }
+                    if (fineData[i]['lng'] > maxLat) {
+                        maxLng = fineData[i]['lng'];
+                    }
+                    if (minLat === 0 || fineData[i]['lat'] < minLat) {
+                        minLat = fineData[i]['lat'];
+                    }
+                    if (minLng === 0 || fineData[i]['lng'] < minLng) {
+                        minLng = fineData[i]['lng'];
+                    }
+                }
+                // 创建矩形
+                var rectangle = new BMap.Polygon([
+                    new BMap.Point(maxLng, maxLat),
+                    new BMap.Point(minLng, maxLat),
+                    new BMap.Point(minLng, minLat),
+                    new BMap.Point(maxLng, minLat)
+                ], {strokeColor:"red", strokeWeight:3, strokeOpacity:1, fillOpacity: 0.01});
+                Map.map.addOverlay(rectangle);
+
+                // 创建线条
+                var stepNum = 20;
+                var step = Math.min((maxLng - minLng) / stepNum, (maxLat - minLat) / stepNum);
+                // 横线
+                for (var start = minLng; start < maxLng; start += step) {
+                    var polyline = new BMap.Polyline([
+                        new BMap.Point(start, minLat),
+                        new BMap.Point(start, maxLat)
+                    ], {strokeColor:"gray", strokeWeight:1, strokeOpacity: 0.1});
+                    Map.map.addOverlay(polyline);
+                }
+                // 竖线
+                for (var s = minLat; s < maxLat; s += step) {
+                    var polyline = new BMap.Polyline([
+                        new BMap.Point(minLng, s),
+                        new BMap.Point(maxLng, s)
+                    ], {strokeColor:"gray", strokeWeight:1, strokeOpacity: 0.1});
+                    Map.map.addOverlay(polyline);
+                }
+                // 获得所有格子的中心坐标
+                var result = [];
+                for (var m = minLng; m < maxLng; m += step) {
+                    for (var n = minLat; n < maxLat; n += step) {
+                        result.push([m, n]);
+                    }
+                }
+                var counts = [];
+                for (var x = 0, len = result.length; x < len; x++) {
+                    counts.push({count: Map.getNearbyPointCount(fineData, result[x][0], result[x][1], step), lng: result[x][0], lat: result[x][1]});
+                }
+                counts.sort(function(left, right) {
+                    return right.count - left.count;
+                });
+                // 得到前五个点
+                for (var y = 0; y < 10; y ++) {
+                    var pointInfo = counts[y];
+                    var point = {
+                        'lng': pointInfo.lng,
+                        'lat': pointInfo.lat
+                    };
+                    // 画个圆
+                    var circle = new BMap.Circle(point, 2000,{strokeColor:"blue", strokeWeight:2, strokeOpacity:0.5}); //创建圆
+                    Map.map.addOverlay(circle);
+                }
+            },
+            getNearbyPointCount: function(data, lng, lat, step) {
+                var minLat = lat - step;
+                var maxLat = lat + step;
+                var maxLng = lng + step;
+                var minLng = lng - step;
+                var count = 0;
+                for (var c = 0, len = data.length; c < len; c++) {
+                    var lat = data[c]['lat'];
+                    var lng = data[c]['lng'];
+                    if (lat >= minLat && lat < maxLat && lng >= minLng && lng < maxLng) {
+                        ++count;
+                    }
+                }
+                return count;
             },
             parseLocation: function(data) {
                 // 创建地址解析器实例
