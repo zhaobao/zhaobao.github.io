@@ -2,3 +2,8 @@
 /**
  * 自己添加的css
  */
+.pure-g [class*="pure-u"] {
+  font-family: "Menlo", "Consolas", "Bitstream Vera Sans Mono", "DejaVu Sans Mono", "Monaco", monospace; }
+
+.post .post-title {
+  font: bold 25px/1.1 "Menlo", "Consolas", "Bitstream Vera Sans Mono", "DejaVu Sans Mono", "Monaco", monospace; }
