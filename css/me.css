@@ -4,9 +4,6 @@
   max-width: 100px;
   border-radius: 50%;
 }
-.site-author-image::after {
-  content: "abc",;
-}
 .site-author-name {
   text-align: center;
 }
