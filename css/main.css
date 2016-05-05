@@ -1544,7 +1544,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #04ffa3;
+  background: #6b8e6a;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2537,7 +2537,15 @@ body {
   float: none;
   margin: 20px auto;
   max-width: 100px;
+  border-radius: 50%;
+}
+.site-author-image::after {
+  content: "abc",;
 }
 .site-author-name {
   text-align: center;
+}
+.links-of-author.motion-element {
+  padding-top: 10px;
+  border-top: 1px solid #ccc;
 }
