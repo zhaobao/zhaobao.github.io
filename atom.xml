@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.zhishoumowen.com/"/>
-  <updated>2016-05-05T02:32:45.000Z</updated>
+  <updated>2016-05-05T11:57:53.000Z</updated>
   <id>http://blog.zhishoumowen.com/</id>
   
   <author>
@@ -16,11 +16,59 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>图·无题</title>
+    <link href="http://blog.zhishoumowen.com/2016/05/05/tu-wuti/"/>
+    <id>http://blog.zhishoumowen.com/2016/05/05/tu-wuti/</id>
+    <published>2016-05-05T11:56:52.000Z</published>
+    <updated>2016-05-05T11:57:53.000Z</updated>
+    
+    <content type="html">&lt;div class=&quot;group-picture&quot;&gt;&lt;div class=&quot;group-picture-container&quot;&gt;&lt;div class=&quot;group-picture-row&quot;&gt;&lt;div class=&quot;group-picture-column&quot; style=&quot;width: 100%;&quot;&gt;&lt;img src=&quot;/images/upload/pig.jpg&quot; alt=&quot;pig&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;group-picture-row&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;div class=&quot;group-picture&quot;&gt;&lt;div class=&quot;group-picture-container&quot;&gt;&lt;div class=&quot;group-picture-row&quot;&gt;&lt;div class=&quot;group-picture-column&quot; style=&quot;widt
+    
+    </summary>
+    
+      <category term="图" scheme="http://blog.zhishoumowen.com/categories/%E5%9B%BE/"/>
+    
+    
+      <category term="好图" scheme="http://blog.zhishoumowen.com/tags/%E5%A5%BD%E5%9B%BE/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>悟·从繁入简</title>
+    <link href="http://blog.zhishoumowen.com/2016/05/05/wu-simple/"/>
+    <id>http://blog.zhishoumowen.com/2016/05/05/wu-simple/</id>
+    <published>2016-05-05T11:56:25.000Z</published>
+    <updated>2016-05-05T11:56:25.000Z</updated>
+    
+    <content type="html">&lt;p&gt;人成熟的标志是什么? 都说大人的世界很复杂, 有太多的事情需要处理,事业,家庭,关系…&lt;br&gt;当你处理好了这些事情的时候,就成熟了么?&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;从繁入简,是一种新生.&lt;/p&gt;
+&lt;hr&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;人成熟的标志是什么? 都说大人的世界很复杂, 有太多的事情需要处理,事业,家庭,关系…&lt;br&gt;当你处理好了这些事情的时候,就成熟了么?&lt;br&gt;
+    
+    </summary>
+    
+      <category term="悟" scheme="http://blog.zhishoumowen.com/categories/%E6%82%9F/"/>
+    
+    
+      <category term="生活" scheme="http://blog.zhishoumowen.com/tags/%E7%94%9F%E6%B4%BB/"/>
+    
+  </entry>
+  
+  <entry>
     <title>术·北京互联网公司分布(前端)</title>
-    <link href="http://blog.zhishoumowen.com/2016/05/05/work-map/"/>
-    <id>http://blog.zhishoumowen.com/2016/05/05/work-map/</id>
+    <link href="http://blog.zhishoumowen.com/2016/05/05/open-map/"/>
+    <id>http://blog.zhishoumowen.com/2016/05/05/open-map/</id>
     <published>2016-05-05T02:19:22.000Z</published>
-    <updated>2016-05-05T02:32:45.000Z</updated>
+    <updated>2016-05-05T11:55:22.000Z</updated>
     
     <content type="html">&lt;p&gt;在北京孩子，每天上下班很痛苦，挤地铁，等公交，吃早饭。。。&lt;br&gt;想做一个map，大体统计下拉勾网上互联网公司的位置，目的是为了找一个比较好方便的租房位置，以下是成果和构思过程。&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&quot;可行性分析&quot;&gt;&lt;a href=&quot;#可行性分析&quot; class=&quot;headerlink&quot; title=&quot;可行性分析&quot;&gt;&lt;/a&gt;可行性分析&lt;/h2&gt;&lt;p&gt;一开始想做个静态地图，似乎效果不好，如果能取到地理位置，然后调用 map api 就好了，因此：&lt;/p&gt;
@@ -49,8 +97,15 @@
 &lt;blockquote&gt;
 &lt;p&gt;爬去的源代码不展示了，尊重别人就是尊重自己。&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;&lt;strong&gt;技术&lt;/strong&gt; Python Scrapy H5 CSS Javascript&lt;/p&gt;
+&lt;h2 id=&quot;技术&quot;&gt;&lt;a href=&quot;#技术&quot; class=&quot;headerlink&quot; title=&quot;技术&quot;&gt;&lt;/a&gt;技术&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Python&lt;/li&gt;
+&lt;li&gt;Scrapy&lt;/li&gt;
+&lt;li&gt;H5&lt;/li&gt;
+&lt;li&gt;CSS&lt;/li&gt;
+&lt;li&gt;Javascript&lt;/li&gt;
+&lt;/ul&gt;
 &lt;p&gt;&lt;a href=&quot;/open/map/?target=blank&quot;&gt;北京前端互联网公司分布图&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
 </content>
     
     <summary type="html">
@@ -65,52 +120,6 @@
       <category term="扯淡" scheme="http://blog.zhishoumowen.com/tags/%E6%89%AF%E6%B7%A1/"/>
     
       <category term="前端" scheme="http://blog.zhishoumowen.com/tags/%E5%89%8D%E7%AB%AF/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>悟·从繁入简</title>
-    <link href="http://blog.zhishoumowen.com/2016/05/05/wu-simple/"/>
-    <id>http://blog.zhishoumowen.com/2016/05/05/wu-simple/</id>
-    <published>2016-05-05T02:18:11.000Z</published>
-    <updated>2016-05-05T02:18:11.000Z</updated>
-    
-    <content type="html">&lt;p&gt;人成熟的标志是什么? 都说大人的世界很复杂, 有太多的事情需要处理,事业,家庭,关系…&lt;br&gt;当你处理好了这些事情的时候,就成熟了么?&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;从繁入简,是一种新生.&lt;/p&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;人成熟的标志是什么? 都说大人的世界很复杂, 有太多的事情需要处理,事业,家庭,关系…&lt;br&gt;当你处理好了这些事情的时候,就成熟了么?&lt;br&gt;
-    
-    </summary>
-    
-      <category term="悟" scheme="http://blog.zhishoumowen.com/categories/%E6%82%9F/"/>
-    
-    
-      <category term="生活" scheme="http://blog.zhishoumowen.com/tags/%E7%94%9F%E6%B4%BB/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>图·无题</title>
-    <link href="http://blog.zhishoumowen.com/2016/05/05/tu-wuti/"/>
-    <id>http://blog.zhishoumowen.com/2016/05/05/tu-wuti/</id>
-    <published>2016-05-05T01:56:52.000Z</published>
-    <updated>2016-05-05T11:36:51.000Z</updated>
-    
-    <content type="html">&lt;div class=&quot;group-picture&quot;&gt;&lt;div class=&quot;group-picture-container&quot;&gt;&lt;div class=&quot;group-picture-row&quot;&gt;&lt;div class=&quot;group-picture-column&quot; style=&quot;width: 100%;&quot;&gt;&lt;img src=&quot;/images/upload/pig.jpg&quot; alt=&quot;pig&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;group-picture-row&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</content>
-    
-    <summary type="html">
-    
-      &lt;div class=&quot;group-picture&quot;&gt;&lt;div class=&quot;group-picture-container&quot;&gt;&lt;div class=&quot;group-picture-row&quot;&gt;&lt;div class=&quot;group-picture-column&quot; style=&quot;widt
-    
-    </summary>
-    
-      <category term="图" scheme="http://blog.zhishoumowen.com/categories/%E5%9B%BE/"/>
-    
-    
-      <category term="好图" scheme="http://blog.zhishoumowen.com/tags/%E5%A5%BD%E5%9B%BE/"/>
     
   </entry>
   
@@ -148,7 +157,7 @@
     <link href="http://blog.zhishoumowen.com/2016/04/08/open-music/"/>
     <id>http://blog.zhishoumowen.com/2016/04/08/open-music/</id>
     <published>2016-04-08T13:53:51.000Z</published>
-    <updated>2016-05-05T02:02:42.000Z</updated>
+    <updated>2016-05-05T11:56:06.000Z</updated>
     
     <content type="html">&lt;p&gt;近来学习React，脑袋一热，为了向良心软件网易云音乐致敬，写了个React版本，部分图片和音乐是从网上获取，再次致敬。&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&quot;截图为证&quot;&gt;&lt;a href=&quot;#截图为证&quot; class=&quot;headerlink&quot; title=&quot;截图为证&quot;&gt;&lt;/a&gt;截图为证&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;/images/upload/music.png&quot; alt=&quot;截图为证&quot;&gt;&lt;/p&gt;
@@ -161,7 +170,8 @@
 &lt;li&gt;Webpack&lt;/li&gt;
 &lt;li&gt;Gulp&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&quot;网易云音乐App设计很多页面，暂时开发到这&quot;&gt;&lt;a href=&quot;#网易云音乐App设计很多页面，暂时开发到这&quot; class=&quot;headerlink&quot; title=&quot;网易云音乐App设计很多页面，暂时开发到这~&quot;&gt;&lt;/a&gt;网易云音乐App设计很多页面，暂时开发到这~&lt;/h2&gt;</content>
+&lt;hr&gt;
+</content>
     
     <summary type="html">
     
@@ -182,8 +192,8 @@
   
   <entry>
     <title>悟·佛曰苦</title>
-    <link href="http://blog.zhishoumowen.com/2016/04/04/tongku/"/>
-    <id>http://blog.zhishoumowen.com/2016/04/04/tongku/</id>
+    <link href="http://blog.zhishoumowen.com/2016/04/04/wu-tongku/"/>
+    <id>http://blog.zhishoumowen.com/2016/04/04/wu-tongku/</id>
     <published>2016-04-04T05:09:49.000Z</published>
     <updated>2016-05-05T01:24:21.000Z</updated>
     
@@ -276,8 +286,8 @@
   
   <entry>
     <title>扯·hello</title>
-    <link href="http://blog.zhishoumowen.com/2016/03/18/hello/"/>
-    <id>http://blog.zhishoumowen.com/2016/03/18/hello/</id>
+    <link href="http://blog.zhishoumowen.com/2016/03/18/che-hello/"/>
+    <id>http://blog.zhishoumowen.com/2016/03/18/che-hello/</id>
     <published>2016-03-18T15:45:11.000Z</published>
     <updated>2016-05-05T01:24:21.000Z</updated>
     
@@ -303,7 +313,7 @@
     <link href="http://blog.zhishoumowen.com/2016/03/17/tu-xiuxing/"/>
     <id>http://blog.zhishoumowen.com/2016/03/17/tu-xiuxing/</id>
     <published>2016-03-17T15:46:55.000Z</published>
-    <updated>2016-05-05T02:11:59.000Z</updated>
+    <updated>2016-05-05T11:43:23.000Z</updated>
     
     <content type="html">&lt;p&gt;生命是一场修行,太多的人生道理,每个人都知道,但是却做不到,因为修行不够;有些道理,只有经历了,才能懂得…&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;br&gt;&lt;img src=&quot;/images/upload/xiuxing.jpg&quot; alt=&quot;修行720&quot;&gt;&lt;/p&gt;
 </content>
@@ -357,8 +367,8 @@
   
   <entry>
     <title>歌·你带给我的</title>
-    <link href="http://blog.zhishoumowen.com/2016/03/17/ge.ndgwd/"/>
-    <id>http://blog.zhishoumowen.com/2016/03/17/ge.ndgwd/</id>
+    <link href="http://blog.zhishoumowen.com/2016/03/17/ge-ndgwd/"/>
+    <id>http://blog.zhishoumowen.com/2016/03/17/ge-ndgwd/</id>
     <published>2016-03-17T02:19:34.000Z</published>
     <updated>2016-05-05T01:24:21.000Z</updated>
     
