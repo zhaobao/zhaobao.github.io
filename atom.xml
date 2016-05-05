@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.zhishoumowen.com/"/>
-  <updated>2016-04-15T09:24:59.000Z</updated>
+  <updated>2016-05-05T02:32:45.000Z</updated>
   <id>http://blog.zhishoumowen.com/</id>
   
   <author>
@@ -17,10 +17,10 @@
   
   <entry>
     <title>术·北京互联网公司分布(前端)</title>
-    <link href="http://blog.zhishoumowen.com/2016/04/13/it-work-map/"/>
-    <id>http://blog.zhishoumowen.com/2016/04/13/it-work-map/</id>
-    <published>2016-04-12T17:06:32.000Z</published>
-    <updated>2016-04-15T09:24:59.000Z</updated>
+    <link href="http://blog.zhishoumowen.com/2016/05/05/work-map/"/>
+    <id>http://blog.zhishoumowen.com/2016/05/05/work-map/</id>
+    <published>2016-05-05T02:19:22.000Z</published>
+    <updated>2016-05-05T02:32:45.000Z</updated>
     
     <content type="html">&lt;p&gt;在北京孩子，每天上下班很痛苦，挤地铁，等公交，吃早饭。。。&lt;br&gt;想做一个map，大体统计下拉勾网上互联网公司的位置，目的是为了找一个比较好方便的租房位置，以下是成果和构思过程。&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&quot;可行性分析&quot;&gt;&lt;a href=&quot;#可行性分析&quot; class=&quot;headerlink&quot; title=&quot;可行性分析&quot;&gt;&lt;/a&gt;可行性分析&lt;/h2&gt;&lt;p&gt;一开始想做个静态地图，似乎效果不好，如果能取到地理位置，然后调用 map api 就好了，因此：&lt;/p&gt;
@@ -46,17 +46,11 @@
 &lt;li&gt;从地铁上看，主要集中在地铁国贸、中关村以及望京附近&lt;/li&gt;
 &lt;li&gt;数据供参考，没啥实际的意义，娱乐一下，一笑了之，谢&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;a href=&quot;/open/map/?target=blank&quot;&gt;北京前端互联网公司分布图&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&quot;技术栈&quot;&gt;&lt;a href=&quot;#技术栈&quot; class=&quot;headerlink&quot; title=&quot;技术栈&quot;&gt;&lt;/a&gt;技术栈&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;Python&lt;/li&gt;
-&lt;li&gt;Scrapy&lt;/li&gt;
-&lt;li&gt;H5&lt;/li&gt;
-&lt;li&gt;CSS&lt;/li&gt;
-&lt;li&gt;Javascript&lt;/li&gt;
-&lt;/ul&gt;
 &lt;blockquote&gt;
 &lt;p&gt;爬去的源代码不展示了，尊重别人就是尊重自己。&lt;/p&gt;
 &lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;技术&lt;/strong&gt; Python Scrapy H5 CSS Javascript&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;/open/map/?target=blank&quot;&gt;北京前端互联网公司分布图&lt;/a&gt;&lt;/p&gt;
 </content>
     
     <summary type="html">
@@ -68,7 +62,57 @@
       <category term="术" scheme="http://blog.zhishoumowen.com/categories/%E6%9C%AF/"/>
     
     
-      <category term="前端 扯淡" scheme="http://blog.zhishoumowen.com/tags/%E5%89%8D%E7%AB%AF-%E6%89%AF%E6%B7%A1/"/>
+      <category term="扯淡" scheme="http://blog.zhishoumowen.com/tags/%E6%89%AF%E6%B7%A1/"/>
+    
+      <category term="前端" scheme="http://blog.zhishoumowen.com/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>悟·从繁入简</title>
+    <link href="http://blog.zhishoumowen.com/2016/05/05/wu-simple/"/>
+    <id>http://blog.zhishoumowen.com/2016/05/05/wu-simple/</id>
+    <published>2016-05-05T02:18:11.000Z</published>
+    <updated>2016-05-05T02:18:11.000Z</updated>
+    
+    <content type="html">&lt;p&gt;人成熟的标志是什么? 都说大人的世界很复杂, 有太多的事情需要处理,事业,家庭,关系…&lt;br&gt;当你处理好了这些事情的时候,就成熟了么?&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;从繁入简,是一种新生.&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;人成熟的标志是什么? 都说大人的世界很复杂, 有太多的事情需要处理,事业,家庭,关系…&lt;br&gt;当你处理好了这些事情的时候,就成熟了么?&lt;br&gt;
+    
+    </summary>
+    
+      <category term="悟" scheme="http://blog.zhishoumowen.com/categories/%E6%82%9F/"/>
+    
+    
+      <category term="生活" scheme="http://blog.zhishoumowen.com/tags/%E7%94%9F%E6%B4%BB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>图·无题</title>
+    <link href="http://blog.zhishoumowen.com/2016/05/05/tu-wuti/"/>
+    <id>http://blog.zhishoumowen.com/2016/05/05/tu-wuti/</id>
+    <published>2016-05-05T01:56:52.000Z</published>
+    <updated>2016-05-05T02:04:39.000Z</updated>
+    
+    <content type="html">&lt;p&gt;&lt;img src=&quot;/images/upload/pig.jpg&quot; alt=&quot;pig&quot;&gt;&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;/images/upload/pig.jpg&quot; alt=&quot;pig&quot;&gt;&lt;/p&gt;
+
+    
+    </summary>
+    
+      <category term="图" scheme="http://blog.zhishoumowen.com/categories/%E5%9B%BE/"/>
+    
+    
+      <category term="好图" scheme="http://blog.zhishoumowen.com/tags/%E5%A5%BD%E5%9B%BE/"/>
     
   </entry>
   
@@ -77,7 +121,7 @@
     <link href="http://blog.zhishoumowen.com/2016/04/13/ge-tcxf-md/"/>
     <id>http://blog.zhishoumowen.com/2016/04/13/ge-tcxf-md/</id>
     <published>2016-04-12T16:45:03.000Z</published>
-    <updated>2016-04-15T10:07:22.000Z</updated>
+    <updated>2016-05-05T01:24:21.000Z</updated>
     
     <content type="html">&lt;p&gt;怎么能够让我不再想你&lt;br&gt;也许爱你爱到最后只能伤心&lt;br&gt;已经有了离开你的勇气&lt;br&gt;在我的梦里你不是唯一&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;br&gt;我想要再回到你温暖的怀里&lt;br&gt;感觉你的心跳你的呼吸&lt;br&gt;想到天长地久对于我们&lt;br&gt;渴望而不可及&lt;br&gt;难道命运注定就此分离&lt;/p&gt;
 &lt;p&gt;爱你痛彻我心扉&lt;br&gt;给了你仅有的一片天&lt;br&gt;回忆的碎片 撞翻我心中思念的火蕊&lt;br&gt;燃烧我整座的堡垒&lt;/p&gt;
@@ -106,10 +150,10 @@
     <link href="http://blog.zhishoumowen.com/2016/04/08/open-music/"/>
     <id>http://blog.zhishoumowen.com/2016/04/08/open-music/</id>
     <published>2016-04-08T13:53:51.000Z</published>
-    <updated>2016-04-08T14:39:28.000Z</updated>
+    <updated>2016-05-05T02:02:42.000Z</updated>
     
     <content type="html">&lt;p&gt;近来学习React，脑袋一热，为了向良心软件网易云音乐致敬，写了个React版本，部分图片和音乐是从网上获取，再次致敬。&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&quot;截图为证&quot;&gt;&lt;a href=&quot;#截图为证&quot; class=&quot;headerlink&quot; title=&quot;截图为证&quot;&gt;&lt;/a&gt;截图为证&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;music.png&quot; alt=&quot;截图为证&quot;&gt;&lt;/p&gt;
+&lt;h2 id=&quot;截图为证&quot;&gt;&lt;a href=&quot;#截图为证&quot; class=&quot;headerlink&quot; title=&quot;截图为证&quot;&gt;&lt;/a&gt;截图为证&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;/images/upload/music.png&quot; alt=&quot;截图为证&quot;&gt;&lt;/p&gt;
 &lt;h2 id=&quot;Demo地址&quot;&gt;&lt;a href=&quot;#Demo地址&quot; class=&quot;headerlink&quot; title=&quot;Demo地址&quot;&gt;&lt;/a&gt;Demo地址&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;/open/music/?target=blank&quot;&gt;猛戳下面链接 music&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&quot;用到的技术栈&quot;&gt;&lt;a href=&quot;#用到的技术栈&quot; class=&quot;headerlink&quot; title=&quot;用到的技术栈&quot;&gt;&lt;/a&gt;用到的技术栈&lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;H5&lt;/li&gt;
@@ -130,7 +174,11 @@
       <category term="术" scheme="http://blog.zhishoumowen.com/categories/%E6%9C%AF/"/>
     
     
-      <category term="开源项目 前端 React" scheme="http://blog.zhishoumowen.com/tags/%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE-%E5%89%8D%E7%AB%AF-React/"/>
+      <category term="开源项目" scheme="http://blog.zhishoumowen.com/tags/%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/"/>
+    
+      <category term="前端" scheme="http://blog.zhishoumowen.com/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+      <category term="React" scheme="http://blog.zhishoumowen.com/tags/React/"/>
     
   </entry>
   
@@ -139,7 +187,7 @@
     <link href="http://blog.zhishoumowen.com/2016/04/04/tongku/"/>
     <id>http://blog.zhishoumowen.com/2016/04/04/tongku/</id>
     <published>2016-04-04T05:09:49.000Z</published>
-    <updated>2016-04-04T05:16:58.000Z</updated>
+    <updated>2016-05-05T01:24:21.000Z</updated>
     
     <content type="html">&lt;p&gt;佛曰，人生有八苦。&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;生&lt;br&gt;老&lt;br&gt;病&lt;br&gt;死&lt;br&gt;爱别离&lt;br&gt;怨憎会&lt;br&gt;求不得&lt;br&gt;五阴炽盛&lt;/p&gt;
@@ -164,7 +212,7 @@
     <link href="http://blog.zhishoumowen.com/2016/04/04/ge-jmdzw/"/>
     <id>http://blog.zhishoumowen.com/2016/04/04/ge-jmdzw/</id>
     <published>2016-04-04T04:54:59.000Z</published>
-    <updated>2016-04-04T05:06:02.000Z</updated>
+    <updated>2016-05-05T01:24:21.000Z</updated>
     
     <content type="html">&lt;p&gt;寂寞是因为思念谁·井冈山&lt;/p&gt;
 &lt;p&gt;你知不知道思念一个人的滋味&lt;br&gt;就像喝了一杯冰冷的水&lt;br&gt;然后用很长很长的时间&lt;br&gt;一颗一颗流成热泪&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;br&gt;你知不知道寂寞的滋味&lt;br&gt;寂寞是因为思念谁&lt;br&gt;你知不知道痛苦的滋味&lt;br&gt;痛苦是因为想忘记谁&lt;br&gt;你知不知道忘记一个人的滋味&lt;br&gt;就像欣赏一种残酷的美&lt;br&gt;然后用很小很小的声音&lt;br&gt;告诉自己坚强面对&lt;br&gt;你知不知道寂寞的滋味&lt;br&gt;寂寞是因为思念谁&lt;br&gt;你知不知道痛苦的滋味&lt;br&gt;痛苦是因为想忘记谁&lt;/p&gt;
@@ -191,7 +239,7 @@
     <link href="http://blog.zhishoumowen.com/2016/03/23/shu-web-ui/"/>
     <id>http://blog.zhishoumowen.com/2016/03/23/shu-web-ui/</id>
     <published>2016-03-23T10:20:51.000Z</published>
-    <updated>2016-03-23T13:33:19.000Z</updated>
+    <updated>2016-05-05T01:24:21.000Z</updated>
     
     <content type="html">&lt;p&gt;网页中没有类似android额dp的东西，因此，如果设计图是120px，那么不论什么样的尺寸下，都是120px，这样体验是不好的，比如在一个&amp;gt;1000px的设备上，120px是一个不从的左侧栏宽度，但是，倒是只有320px的设备上，就显得太大了，应该是能够等比缩放比较好，比如40px；&lt;/p&gt;
 &lt;p&gt;比例的概念是不错的，问题是，网页上好多空间使用比分比是比较困难的：&lt;/p&gt;
@@ -233,7 +281,7 @@
     <link href="http://blog.zhishoumowen.com/2016/03/18/hello/"/>
     <id>http://blog.zhishoumowen.com/2016/03/18/hello/</id>
     <published>2016-03-18T15:45:11.000Z</published>
-    <updated>2016-03-18T15:47:19.000Z</updated>
+    <updated>2016-05-05T01:24:21.000Z</updated>
     
     <content type="html">&lt;p&gt;:-) 侧着的笑脸,这是程序员向这个world说hello的方式&lt;/p&gt;
 </content>
@@ -254,12 +302,12 @@
   
   <entry>
     <title>图·生命是一场修行</title>
-    <link href="http://blog.zhishoumowen.com/2016/03/17/tu.xiuxing/"/>
-    <id>http://blog.zhishoumowen.com/2016/03/17/tu.xiuxing/</id>
+    <link href="http://blog.zhishoumowen.com/2016/03/17/tu-xiuxing/"/>
+    <id>http://blog.zhishoumowen.com/2016/03/17/tu-xiuxing/</id>
     <published>2016-03-17T15:46:55.000Z</published>
-    <updated>2016-03-17T15:53:08.000Z</updated>
+    <updated>2016-05-05T02:11:59.000Z</updated>
     
-    <content type="html">&lt;p&gt;生命是一场修行,太多的人生道理,每个人都知道,但是却做不到,因为修行不够;有些道理,只有经历了,才能懂得…&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;br&gt;&lt;img src=&quot;xiuxing.jpg&quot; alt=&quot;修行720&quot;&gt;&lt;/p&gt;
+    <content type="html">&lt;p&gt;生命是一场修行,太多的人生道理,每个人都知道,但是却做不到,因为修行不够;有些道理,只有经历了,才能懂得…&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;br&gt;&lt;img src=&quot;/images/upload/xiuxing.jpg&quot; alt=&quot;修行720&quot;&gt;&lt;/p&gt;
 </content>
     
     <summary type="html">
@@ -276,37 +324,13 @@
   </entry>
   
   <entry>
-    <title>悟·从繁入简</title>
-    <link href="http://blog.zhishoumowen.com/2016/03/17/wu.simple/"/>
-    <id>http://blog.zhishoumowen.com/2016/03/17/wu.simple/</id>
-    <published>2016-03-17T03:35:12.000Z</published>
-    <updated>2016-03-17T03:35:12.000Z</updated>
-    
-    <content type="html">&lt;p&gt;人成熟的标志是什么? 都说大人的世界很复杂, 有太多的事情需要处理,事业,家庭,关系…&lt;br&gt;当你处理好了这些事情的时候,就成熟了么?&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;从繁入简,是一种新生.&lt;/p&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;人成熟的标志是什么? 都说大人的世界很复杂, 有太多的事情需要处理,事业,家庭,关系…&lt;br&gt;当你处理好了这些事情的时候,就成熟了么?&lt;br&gt;
-    
-    </summary>
-    
-      <category term="悟" scheme="http://blog.zhishoumowen.com/categories/%E6%82%9F/"/>
-    
-    
-      <category term="生活" scheme="http://blog.zhishoumowen.com/tags/%E7%94%9F%E6%B4%BB/"/>
-    
-  </entry>
-  
-  <entry>
     <title>术·滚动条造成的页面偏移闪动</title>
     <link href="http://blog.zhishoumowen.com/2016/03/17/shu-web-scroll/"/>
     <id>http://blog.zhishoumowen.com/2016/03/17/shu-web-scroll/</id>
     <published>2016-03-17T03:14:51.000Z</published>
-    <updated>2016-03-17T15:34:11.000Z</updated>
+    <updated>2016-05-05T01:52:30.000Z</updated>
     
-    <content type="html">&lt;p&gt;这是一个比较恶心的问题,当滚动条出现的时候,页面的可用空间会被浏览器压缩,如果你很在乎细节,如果你盯着屏幕看,就会发现页面突然间往左平移了,这个问题对于一些吹毛求疵的产品们,和一些设计们来说是不能容忍的,当然对于有强迫症的我来说,&lt;br&gt;是能容忍的…&lt;/p&gt;
+    <content type="html">&lt;p&gt;这是一个比较恶心的问题,当滚动条出现的时候,页面的可用空间会被浏览器压缩,如果你很在乎细节,如果你盯着屏幕看,就会发现页面突然间往左平移了,这个问题对于一些吹毛求疵的产品们,和一些设计们来说是不能容忍的,当然对于有强迫症的我来说,&lt;br&gt;是能容忍的…&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;解决这个问题,有4种方案,没错,有4种方案:&lt;/p&gt;
 &lt;p&gt;1 如果你知道页面的高度,那可以直接强制出现滚动条&lt;br&gt;&lt;figure class=&quot;highlight css&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;selector-class&quot;&gt;.container&lt;/span&gt; &amp;#123; &lt;span class=&quot;attribute&quot;&gt;overflow-y&lt;/span&gt;: scroll; &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
 &lt;p&gt;2 如果你不知道,而且页面还会变化,你又是一个现在浏览器使用者,注重现代人的体验,那么有酷炫拽 + 掉渣天的CSS3解决&lt;br&gt;&lt;figure class=&quot;highlight css&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;selector-class&quot;&gt;.container&lt;/span&gt; &amp;#123; &lt;span class=&quot;attribute&quot;&gt;padding-left&lt;/span&gt;: &lt;span class=&quot;built_in&quot;&gt;calc&lt;/span&gt;(100vw - 100% );&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
@@ -322,8 +346,7 @@
     
     <summary type="html">
     
-      &lt;p&gt;这是一个比较恶心的问题,当滚动条出现的时候,页面的可用空间会被浏览器压缩,如果你很在乎细节,如果你盯着屏幕看,就会发现页面突然间往左平移了,这个问题对于一些吹毛求疵的产品们,和一些设计们来说是不能容忍的,当然对于有强迫症的我来说,&lt;br&gt;是能容忍的…&lt;/p&gt;
-&lt;p&gt;解决这个
+      &lt;p&gt;这是一个比较恶心的问题,当滚动条出现的时候,页面的可用空间会被浏览器压缩,如果你很在乎细节,如果你盯着屏幕看,就会发现页面突然间往左平移了,这个问题对于一些吹毛求疵的产品们,和一些设计们来说是不能容忍的,当然对于有强迫症的我来说,&lt;br&gt;是能容忍的…&lt;br&gt;
     
     </summary>
     
@@ -339,7 +362,7 @@
     <link href="http://blog.zhishoumowen.com/2016/03/17/ge.ndgwd/"/>
     <id>http://blog.zhishoumowen.com/2016/03/17/ge.ndgwd/</id>
     <published>2016-03-17T02:19:34.000Z</published>
-    <updated>2016-03-17T15:52:41.000Z</updated>
+    <updated>2016-05-05T01:24:21.000Z</updated>
     
     <content type="html">&lt;p&gt;你带给我的·任静静&lt;/p&gt;
 &lt;p&gt;是拥抱吧 也许是心跳&lt;br&gt;一念之间 我忘不掉&lt;br&gt;是守候吧 也许是远走&lt;br&gt;牵你的手 我便拥有&lt;br&gt;推开窗 看见光&lt;br&gt;看见精彩 的绽放&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;br&gt;从未有过 的波浪&lt;br&gt;敲敲打打 在心上&lt;br&gt;与你走过 每一个远方&lt;br&gt;奇迹出现的地方&lt;br&gt;你的模样 是我最精彩的 力量&lt;br&gt;推开窗 看见光&lt;br&gt;看见精彩 的绽放&lt;br&gt;从未有过 的波浪&lt;br&gt;敲敲打打 在心上&lt;br&gt;与你走过 每一个远方&lt;br&gt;奇迹出现的地方&lt;br&gt;你的模样 是我最精彩的 力量&lt;/p&gt;
@@ -361,8 +384,8 @@
   
   <entry>
     <title>无·Init</title>
-    <link href="http://blog.zhishoumowen.com/2016/03/16/wu.init/"/>
-    <id>http://blog.zhishoumowen.com/2016/03/16/wu.init/</id>
+    <link href="http://blog.zhishoumowen.com/2016/03/16/wu-init/"/>
+    <id>http://blog.zhishoumowen.com/2016/03/16/wu-init/</id>
     <published>2016-03-16T10:57:44.000Z</published>
     <updated>2016-03-17T03:35:45.000Z</updated>
     
