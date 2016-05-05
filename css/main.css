@@ -1544,7 +1544,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ff0a67;
+  background: #129c3d;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2545,4 +2545,7 @@ body {
 .links-of-author.motion-element {
   padding-top: 10px;
   border-top: 1px solid #ccc;
+}
+.group-picture-container {
+  margin-bottom: 6px;
 }
