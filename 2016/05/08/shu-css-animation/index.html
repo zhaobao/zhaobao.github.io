@@ -1,0 +1,702 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css"/>
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="前端," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
+
+
+
+
+
+
+<meta name="description" content="随着对用户体验的原来越重视，可交互性是衡量一个好网站的好的指标了，Animation就是一个可以提高用户体验，提高交互性，可以提高网站逼格的好方法。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="术·CSS Animation">
+<meta property="og:url" content="http://blog.zhishoumowen.com/2016/05/08/shu-css-animation/index.html">
+<meta property="og:site_name" content="简">
+<meta property="og:description" content="随着对用户体验的原来越重视，可交互性是衡量一个好网站的好的指标了，Animation就是一个可以提高用户体验，提高交互性，可以提高网站逼格的好方法。">
+<meta property="og:image" content="http://blog.zhishoumowen.com/images/upload/animation/animation-beat.gif">
+<meta property="og:image" content="http://blog.zhishoumowen.com/images/upload/animation/animation-direction.png">
+<meta property="og:image" content="http://blog.zhishoumowen.com/images/upload/animation/animation-css.gif">
+<meta property="og:image" content="http://blog.zhishoumowen.com/images/upload/animation/animation-loading.gif">
+<meta property="og:image" content="http://blog.zhishoumowen.com/images/upload/animation/animation-rain.gif">
+<meta property="og:image" content="http://blog.zhishoumowen.com/images/upload/animation/animation-property.png">
+<meta property="og:image" content="http://blog.zhishoumowen.com/images/upload/animation/animation-browser.png">
+<meta property="og:image" content="http://blog.zhishoumowen.com/images/upload/animation/animation-man.gif">
+<meta property="og:updated_time" content="2016-05-08T15:45:12.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="术·CSS Animation">
+<meta name="twitter:description" content="随着对用户体验的原来越重视，可交互性是衡量一个好网站的好的指标了，Animation就是一个可以提高用户体验，提高交互性，可以提高网站逼格的好方法。">
+<meta name="twitter:image" content="http://blog.zhishoumowen.com/images/upload/animation/animation-beat.gif">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Pisces',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 0,
+      author: '博主'
+    }
+  };
+</script>
+
+  <title> 术·CSS Animation | 简 </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">简</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle">且行且珍惜</p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-home fa-fw"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-archive fa-fw"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-tags fa-fw"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-user fa-fw"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-rss">
+          <a href="/atom.xml" rel="section">
+            
+              <i class="menu-item-icon fa fa-rss fa-fw"></i> <br />
+            
+            订阅
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                术·CSS Animation
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-05-08T20:43:58+08:00" content="2016-05-08">
+              2016-05-08
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/术/" itemprop="url" rel="index">
+                    <span itemprop="name">术</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/05/08/shu-css-animation/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2016/05/08/shu-css-animation/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h2 id="你是我不变的心跳"><a href="#你是我不变的心跳" class="headerlink" title="你是我不变的心跳 "></a>你是我不变的心跳 <i class="fa fa-1x fa-heart"></i></h2><p><img src="/images/upload/animation/animation-beat.gif" alt="beat"></p>
+<h2 id="CSS动画的优势"><a href="#CSS动画的优势" class="headerlink" title="CSS动画的优势"></a>CSS动画的优势</h2><ul>
+<li>易用</li>
+<li>性能高</li>
+<li>无需优化</li>
+</ul>
+<h2 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h2><p>动画，动画，顾名思义，可以动的画面，CSS动画很好的诠释了这个概念，通过定义不同进度下的画面，连动起来，形成了动画<br>CSS通过 keyframe 来定义关键帧，通过animation-*属性来定义动画的方方面面</p>
+<h2 id="语法"><a href="#语法" class="headerlink" title="语法"></a>语法</h2><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">animation:</span><br><span class="line">    &lt;duration&gt;</span><br><span class="line">    &lt;timing-function&gt;</span><br><span class="line">    &lt;delay time&gt;</span><br><span class="line">    &lt;iteration-count&gt;</span><br><span class="line">    &lt;direction&gt;</span><br><span class="line">    &lt;fill-mode&gt;</span><br><span class="line">    &lt;play-state&gt;</span><br><span class="line">    &lt;name&gt;</span><br><span class="line"></span><br><span class="line">animation-duration 动画持续的时间，单位为s或者ms</span><br><span class="line">animation-timing-function 差值器，时间和过程的函数关系，比如线性关系，ease，或者万能的cubic-bezier</span><br><span class="line">animation-delay 延迟开始时间</span><br><span class="line">animation-iteration-count 动画持续次数，1 or infinite</span><br><span class="line">animation-direction 动画开始的方向，比如从开始到结束or从结束到开始or循环，normal | reverse | alternate | alternate-reverse</span><br><span class="line">animation-fill-mode 定义了动画结束后的状态，比如可以保留动画结束的结果，none | forwards | backwards | both</span><br><span class="line">animation-play-state 动画状态 running | paused</span><br><span class="line">animation-name 动画名字，keyframe定义的名字</span><br><span class="line"></span><br><span class="line">- 最小的animation</span><br><span class="line">     animation: 1s beat;</span><br><span class="line">-保留动画后的效果</span><br><span class="line">     animation: 1s 2 alternate forwards beat;</span><br><span class="line">-延迟</span><br><span class="line">     animation: 1s ease 5s beat;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>关于animation-fill-model是不好理解的，直接看下图就明白了</li>
+</ul>
+<p><img src="/images/upload/animation/animation-direction.png" alt="beat"></p>
+<ul>
+<li>关于animation-play-state可能会觉得莫名其妙，其实就是可以控制动画，让他暂停，然后可以继续播放，应用场景可能不多。</li>
+</ul>
+<h2 id="与JS交互"><a href="#与JS交互" class="headerlink" title="与JS交互"></a>与JS交互</h2><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">function listener(e) &#123;</span><br><span class="line">     console.log(e); // AnimationEvent 有三个属性 animationName、elapsedTime(逝去的时间)、pseudoElement(为元素的名字，不是的话为空)</span><br><span class="line">&#125;</span><br><span class="line">var e = document.getElementById("heat3);</span><br><span class="line">e.addEventListener("animationstart", listener, false);</span><br><span class="line">e.addEventListener("animationend", listener, false);</span><br><span class="line">e.addEventListener("animationiteration", listener, false);</span><br><span class="line">e.className = "beat";</span><br></pre></td></tr></table></figure>
+<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">@keyframes beat &#123;</span><br><span class="line">    0% &#123;</span><br><span class="line">        transform: scale(0.5)</span><br><span class="line">    &#125;</span><br><span class="line">    100% &#123;</span><br><span class="line">        transform: scale(1)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">.heart &#123;</span><br><span class="line">    color: $color_red;</span><br><span class="line">    animation-name: beat; // 动画名字</span><br><span class="line">    animation-duration: 0.75s; // 0.75秒一个循环</span><br><span class="line">    animation-timing-function: cubic-bezier(0.18, 0.89, 0.32, 1.28); // 理论上，三次贝塞尔可以实现所有的效果，可以通过chrome控制台预览</span><br><span class="line">    animation-iteration-count: infinite; // 循环次数无限</span><br><span class="line">    animation-direction: alternate; // 动画方向从开始到结束，然后从结束到开始</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="Animate-css-栗子"><a href="#Animate-css-栗子" class="headerlink" title="Animate.css 栗子"></a>Animate.css 栗子</h2><p><i class="fa fa-2x fa-github"></i> Github上最火的css动画项目Animate.css的一个效果</p>
+<p><img src="/images/upload/animation/animation-css.gif" alt="beat"></p>
+<p>效果不错吧，来看下源码</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">@keyframes lightSpeedIn &#123;</span><br><span class="line">     from &#123; // from == 0%</span><br><span class="line">          transform: translate3d(100%, 0, 0) skewX(-30deg); 从右侧 X斜切开始</span><br><span class="line">          opacity: 0;</span><br><span class="line">     &#125;</span><br><span class="line">     60% &#123;</span><br><span class="line">          transform: skewX(20deg); // 改变斜切角度</span><br><span class="line">          opacity: 1;</span><br><span class="line">     &#125;</span><br><span class="line">     80% &#123;</span><br><span class="line">          transform: skewX(-5deg); // 继续改变</span><br><span class="line">          opacity: 1;</span><br><span class="line">     &#125;</span><br><span class="line">     to &#123; // to == 100%</span><br><span class="line">          transform: none; // 删除transform</span><br><span class="line">          opacity: 1;</span><br><span class="line">     &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">.lightSpeedIn &#123;</span><br><span class="line">     animation-name: lightSpeedIn;</span><br><span class="line">     animation-timing-function: ease-out;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>是不是觉得再复杂的代码都可以理解了么？其实就是这么简单的，只要你想象力够丰富，都不是问题。</p>
+<h2 id="经典的加载栗子"><a href="#经典的加载栗子" class="headerlink" title="经典的加载栗子"></a>经典的加载栗子</h2><p><img src="/images/upload/animation/animation-loading.gif" alt="beat"></p>
+<p>每个条通过transform的rotate调整好角度，然后加一个透明度变化的动画就行，每个条的延迟执行时机不一样就行</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">@<span class="keyword">keyframes</span> line-spin-fade-loader &#123;</span><br><span class="line">    50% &#123;</span><br><span class="line">        <span class="attribute">opacity</span>: .<span class="number">3</span></span><br><span class="line">    &#125;</span><br><span class="line">    100% &#123;</span><br><span class="line">        <span class="attribute">opacity</span>: <span class="number">1</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="来个实际的例子"><a href="#来个实际的例子" class="headerlink" title="来个实际的例子"></a>来个实际的例子</h2><p><img src="/images/upload/animation/animation-rain.gif" alt="beat"></p>
+<p>来分析这个，可以猜测出雨滴绝对是动画做的，如果是你会怎么做呢？我会做个图片放到上面，然后雨滴的部分是透明的，这样只要把底部做成动画就行；<br>如何做到循环，还没有跳跃感？使用两个雨滴串联起来可以做到，所以自己实现很简,<br>下面是七牛的源码，和猜测的差不多</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br></pre></td><td class="code"><pre><span class="line">.section-intro .safe .safe-inner &#123;</span><br><span class="line">     overflow: hidden;</span><br><span class="line">     height: 197px;</span><br><span class="line">     width: 197px;</span><br><span class="line">&#125;</span><br><span class="line">.section-intro .circle .circle-inner &#123;</span><br><span class="line">     margin: 0 auto;</span><br><span class="line">     position: relative;</span><br><span class="line">&#125;</span><br><span class="line">.section-intro .safe .safe-inner .icon-circle1 &#123;</span><br><span class="line">     left: 0;</span><br><span class="line">     right: 0;</span><br><span class="line">     z-index: 10;</span><br><span class="line">     position: absolute;</span><br><span class="line">&#125;</span><br><span class="line">// 这个是上面的背景</span><br><span class="line">icon-circle1 &#123;</span><br><span class="line">     background-image: url(../../img/sprite-indexGlobal.png);</span><br><span class="line">     background-position: 0 -265px;</span><br><span class="line">     width: 197px;</span><br><span class="line">     height: 197px;</span><br><span class="line">&#125;</span><br><span class="line">.section-intro-animate .safe .safe-inner .icon-yudi &#123;</span><br><span class="line">     -webkit-animation: drop 1.5s linear infinite;</span><br><span class="line">     animation: drop 1.5s linear infinite;</span><br><span class="line">&#125;</span><br><span class="line">.section-intro .safe .safe-inner .icon-yudi &#123;</span><br><span class="line">     left: 0;</span><br><span class="line">     top: 0;</span><br><span class="line">&#125;</span><br><span class="line">.section-intro .circle .icon &#123;</span><br><span class="line">     position: absolute;</span><br><span class="line">&#125;</span><br><span class="line">// 这个是两个雨滴串联效果</span><br><span class="line">.icon-yudi &#123;</span><br><span class="line">     background-image: url(../../img/sprite-indexGlobal.png);</span><br><span class="line">     background-position: -265px 0;</span><br><span class="line">     width: 197px;</span><br><span class="line">     height: 197px;</span><br><span class="line">&#125;</span><br><span class="line">@keyframes drop &#123;</span><br><span class="line">    0% &#123;</span><br><span class="line">        top: 0</span><br><span class="line">    &#125;</span><br><span class="line">    to &#123;</span><br><span class="line">        top: 197px</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"safe-inner circle-inner"</span>&gt;</span></span><br><span class="line">     <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"icon-circle1"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">     <span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">"icon icon-yudi"</span>&gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">     <span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">"icon icon-yudi icon-yudi2"</span>&gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h2 id="delay-为负数的情况"><a href="#delay-为负数的情况" class="headerlink" title="delay 为负数的情况"></a>delay 为负数的情况</h2><p>这个有点意思，可以把动画从一个中间状态开始，比如定义了一个3秒动画，delay为-1s，那初始状态就是从秒开始的状态</p>
+<h2 id="性能"><a href="#性能" class="headerlink" title="性能"></a>性能</h2><p>不要以为你看懂了就很高兴了，其实还有很多，虽然好多属性可以用来动画，可以看参考链接，但是改变一个属性的成本是不一样的，可以看csstrigger来参考哪些属性会引起layout paint composition，当然了，简而言之还是要说下的：所有的动画里，posotion scale rotation 和 opacity的消耗是最低的</p>
+<p><img src="/images/upload/animation/animation-property.png" alt="beat"></p>
+<p>性能的东西不在这多说了，会单独来一个文章。</p>
+<h2 id="兼容性"><a href="#兼容性" class="headerlink" title="兼容性"></a>兼容性</h2><p>从IE10开始，手机浏览器需要带-webkit前缀</p>
+<p><img src="/images/upload/animation/animation-browser.png" alt="beat"></p>
+<h2 id="与translate的区别？"><a href="#与translate的区别？" class="headerlink" title="与translate的区别？"></a>与translate的区别？</h2><p>transition定义了两种状态的转换效果，无法指定中间过程的</p>
+<h2 id="局限"><a href="#局限" class="headerlink" title="局限"></a>局限</h2><p>animation的交互还是有限的，你只能去监听，却不能做到详细的控制，甚至，控制的话还不如几个transition的组合，如果动画比较复杂，建议使用canvas动画</p>
+<h2 id="进一步阅读"><a href="#进一步阅读" class="headerlink" title="进一步阅读"></a>进一步阅读</h2><p>这个动画也是CSS实现的，把身体拆开了，每一个加animation，包括背景都是animation，所以，你想象力有多少，就能做到多少</p>
+<p><img src="/images/upload/animation/animation-man.gif" alt="beat"></p>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties" target="_blank" rel="external">可以使用的属性列表</a><br><a href="http://www.ruanyifeng.com/blog/2014/02/css_transition_and_animation.html" target="_blank" rel="external">阮一峰的Animation</a><br><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations/Using_CSS_animations" target="_blank" rel="external">MDN介绍</a><br><a href="https://github.com/ConnorAtherton/loaders.css" target="_blank" rel="external">各种loader效果</a><br><a href="https://github.com/h5bp/Effeckt.css" target="_blank" rel="external">各种效果，这个不错，可以参考</a><br><a href="http://daneden.github.io/animate.css/" target="_blank" rel="external">Github Star 第一的 animation.css</a><br><a href="https://csstriggers.com/" target="_blank" rel="external">CssTrigger</a><br><a href="http://www.html5rocks.com/zh/tutorials/speed/high-performance-animations/" target="_blank" rel="external">性能提升</a></p>
+
+      
+    </div>
+
+    <div>
+      
+        
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/前端/" rel="tag">#前端</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/05/05/tu-wuti/" rel="next" title="图·无题">
+                <i class="fa fa-chevron-left"></i> 图·无题
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript>
+      </div>
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar_round.png"
+               alt="zhaobao" />
+          <p class="site-author-name" itemprop="name">zhaobao</p>
+          <p class="site-description motion-element" itemprop="description"></p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">14</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          
+            <div class="site-state-item site-state-categories">
+              
+                <span class="site-state-item-count">6</span>
+                <span class="site-state-item-name">分类</span>
+              
+            </div>
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">8</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/zhaobao/" target="_blank" title="GitHub">
+                  
+                    <i class="fa fa-github"></i>
+                  
+                  GitHub
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://www.fflove.top/" target="_blank" title="如初见">
+                  
+                    <i class="fa fa-heart"></i>
+                  
+                  如初见
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#你是我不变的心跳"><span class="nav-number">1.</span> <span class="nav-text">你是我不变的心跳 </span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#CSS动画的优势"><span class="nav-number">2.</span> <span class="nav-text">CSS动画的优势</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#概念"><span class="nav-number">3.</span> <span class="nav-text">概念</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#语法"><span class="nav-number">4.</span> <span class="nav-text">语法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#与JS交互"><span class="nav-number">5.</span> <span class="nav-text">与JS交互</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#代码"><span class="nav-number">6.</span> <span class="nav-text">代码</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Animate-css-栗子"><span class="nav-number">7.</span> <span class="nav-text">Animate.css 栗子</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#经典的加载栗子"><span class="nav-number">8.</span> <span class="nav-text">经典的加载栗子</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#来个实际的例子"><span class="nav-number">9.</span> <span class="nav-text">来个实际的例子</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#delay-为负数的情况"><span class="nav-number">10.</span> <span class="nav-text">delay 为负数的情况</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#性能"><span class="nav-number">11.</span> <span class="nav-text">性能</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#兼容性"><span class="nav-number">12.</span> <span class="nav-text">兼容性</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#与translate的区别？"><span class="nav-number">13.</span> <span class="nav-text">与translate的区别？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#局限"><span class="nav-number">14.</span> <span class="nav-text">局限</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#进一步阅读"><span class="nav-number">15.</span> <span class="nav-text">进一步阅读</span></a></li></ol></div>
+            
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy;  2015 - 
+  <span itemprop="copyrightYear">2016</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <a href="https://github.com/zhaobao/" target="_blank">
+    <span class="author" itemprop="copyrightHolder">zhaobao</span>
+  </a>
+</div>
+
+<div class="powered-by">
+  由 <a class="theme-link" href="http://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Pisces
+  </a>
+</div>
+
+        
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.0.1"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
+
+
+
+  
+
+
+
+  
+
+    <script type="text/javascript">
+      var disqus_shortname = 'zhishoumv';
+      var disqus_identifier = '2016/05/08/shu-css-animation/';
+      var disqus_title = '术·CSS Animation';
+      var disqus_url = 'http://blog.zhishoumowen.com/2016/05/08/shu-css-animation/';
+
+      function run_disqus_script(disqus_script){
+        var dsq = document.createElement('script');
+        dsq.type = 'text/javascript';
+        dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/' + disqus_script;
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      }
+
+      run_disqus_script('count.js');
+      
+        run_disqus_script('embed.js');
+      
+    </script>
+  
+
+
+
+  
+  
+  
+
+  
+
+  
+
+</body>
+</html>
