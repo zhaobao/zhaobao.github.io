@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.zhishoumowen.com/"/>
-  <updated>2016-05-08T15:45:12.000Z</updated>
+  <updated>2016-05-08T16:12:17.000Z</updated>
   <id>http://blog.zhishoumowen.com/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://blog.zhishoumowen.com/2016/05/08/shu-css-animation/"/>
     <id>http://blog.zhishoumowen.com/2016/05/08/shu-css-animation/</id>
     <published>2016-05-08T12:43:58.000Z</published>
-    <updated>2016-05-08T15:45:12.000Z</updated>
+    <updated>2016-05-08T16:12:17.000Z</updated>
     
     <content type="html">&lt;h2 id=&quot;你是我不变的心跳&quot;&gt;&lt;a href=&quot;#你是我不变的心跳&quot; class=&quot;headerlink&quot; title=&quot;你是我不变的心跳 &quot;&gt;&lt;/a&gt;你是我不变的心跳 &lt;i class=&quot;fa fa-1x fa-heart&quot;&gt;&lt;/i&gt;&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;/images/upload/animation/animation-beat.gif&quot; alt=&quot;beat&quot;&gt;&lt;/p&gt;
 &lt;h2 id=&quot;CSS动画的优势&quot;&gt;&lt;a href=&quot;#CSS动画的优势&quot; class=&quot;headerlink&quot; title=&quot;CSS动画的优势&quot;&gt;&lt;/a&gt;CSS动画的优势&lt;/h2&gt;&lt;ul&gt;
@@ -63,6 +63,7 @@
 &lt;h2 id=&quot;进一步阅读&quot;&gt;&lt;a href=&quot;#进一步阅读&quot; class=&quot;headerlink&quot; title=&quot;进一步阅读&quot;&gt;&lt;/a&gt;进一步阅读&lt;/h2&gt;&lt;p&gt;这个动画也是CSS实现的，把身体拆开了，每一个加animation，包括背景都是animation，所以，你想象力有多少，就能做到多少&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;/images/upload/animation/animation-man.gif&quot; alt=&quot;beat&quot;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;可以使用的属性列表&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://www.ruanyifeng.com/blog/2014/02/css_transition_and_animation.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;阮一峰的Animation&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations/Using_CSS_animations&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;MDN介绍&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://github.com/ConnorAtherton/loaders.css&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;各种loader效果&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://github.com/h5bp/Effeckt.css&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;各种效果，这个不错，可以参考&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://daneden.github.io/animate.css/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Github Star 第一的 animation.css&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://csstriggers.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;CssTrigger&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://www.html5rocks.com/zh/tutorials/speed/high-performance-animations/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;性能提升&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
 </content>
     
     <summary type="html">
@@ -76,6 +77,8 @@
     
       <category term="前端" scheme="http://blog.zhishoumowen.com/tags/%E5%89%8D%E7%AB%AF/"/>
     
+      <category term="CSS" scheme="http://blog.zhishoumowen.com/tags/CSS/"/>
+    
   </entry>
   
   <entry>
@@ -83,9 +86,10 @@
     <link href="http://blog.zhishoumowen.com/2016/05/05/tu-wuti/"/>
     <id>http://blog.zhishoumowen.com/2016/05/05/tu-wuti/</id>
     <published>2016-05-05T11:56:52.000Z</published>
-    <updated>2016-05-05T11:57:53.000Z</updated>
+    <updated>2016-05-08T16:11:12.000Z</updated>
     
     <content type="html">&lt;div class=&quot;group-picture&quot;&gt;&lt;div class=&quot;group-picture-container&quot;&gt;&lt;div class=&quot;group-picture-row&quot;&gt;&lt;div class=&quot;group-picture-column&quot; style=&quot;width: 100%;&quot;&gt;&lt;img src=&quot;/images/upload/pig.jpg&quot; alt=&quot;pig&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;group-picture-row&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;hr&gt;
 </content>
     
     <summary type="html">
@@ -191,7 +195,7 @@
     <link href="http://blog.zhishoumowen.com/2016/04/13/ge-tcxf-md/"/>
     <id>http://blog.zhishoumowen.com/2016/04/13/ge-tcxf-md/</id>
     <published>2016-04-12T16:45:03.000Z</published>
-    <updated>2016-05-05T01:24:21.000Z</updated>
+    <updated>2016-05-08T16:10:54.000Z</updated>
     
     <content type="html">&lt;p&gt;怎么能够让我不再想你&lt;br&gt;也许爱你爱到最后只能伤心&lt;br&gt;已经有了离开你的勇气&lt;br&gt;在我的梦里你不是唯一&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;br&gt;我想要再回到你温暖的怀里&lt;br&gt;感觉你的心跳你的呼吸&lt;br&gt;想到天长地久对于我们&lt;br&gt;渴望而不可及&lt;br&gt;难道命运注定就此分离&lt;/p&gt;
 &lt;p&gt;爱你痛彻我心扉&lt;br&gt;给了你仅有的一片天&lt;br&gt;回忆的碎片 撞翻我心中思念的火蕊&lt;br&gt;燃烧我整座的堡垒&lt;/p&gt;
@@ -200,6 +204,8 @@
 &lt;p&gt;爱你痛彻我心扉&lt;br&gt;给了你仅有的一片天&lt;br&gt;回忆的碎片撞翻我心中思念的火蕊&lt;br&gt;燃烧我整座的堡垒&lt;/p&gt;
 &lt;p&gt;爱你痛彻我心扉&lt;br&gt;少了你还残留一片天&lt;br&gt;我想我只会紧握住手中凋零的玫瑰&lt;br&gt;品尝你赐给的泪水&lt;br&gt;或许你曾为我流泪&lt;br&gt;如今你让我痛彻心扉&lt;br&gt;如今你让我痛彻心扉&lt;/p&gt;
 &lt;iframe frameborder=&quot;no&quot; border=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; width=&quot;330&quot; height=&quot;86&quot; src=&quot;http://music.163.com/outchain/player?type=2&amp;id=103913&amp;auto=1&amp;height=66&quot;&gt;&lt;/iframe&gt;
+
+&lt;hr&gt;
 </content>
     
     <summary type="html">
@@ -258,11 +264,12 @@
     <link href="http://blog.zhishoumowen.com/2016/04/04/wu-tongku/"/>
     <id>http://blog.zhishoumowen.com/2016/04/04/wu-tongku/</id>
     <published>2016-04-04T05:09:49.000Z</published>
-    <updated>2016-05-05T01:24:21.000Z</updated>
+    <updated>2016-05-08T16:11:24.000Z</updated>
     
     <content type="html">&lt;p&gt;佛曰，人生有八苦。&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;生&lt;br&gt;老&lt;br&gt;病&lt;br&gt;死&lt;br&gt;爱别离&lt;br&gt;怨憎会&lt;br&gt;求不得&lt;br&gt;五阴炽盛&lt;/p&gt;
 &lt;p&gt;在你人生的某个阶段，总要体会这些苦，逃不过的。&lt;/p&gt;
+&lt;hr&gt;
 </content>
     
     <summary type="html">
@@ -283,12 +290,13 @@
     <link href="http://blog.zhishoumowen.com/2016/04/04/ge-jmdzw/"/>
     <id>http://blog.zhishoumowen.com/2016/04/04/ge-jmdzw/</id>
     <published>2016-04-04T04:54:59.000Z</published>
-    <updated>2016-05-05T01:24:21.000Z</updated>
+    <updated>2016-05-08T16:10:50.000Z</updated>
     
     <content type="html">&lt;p&gt;寂寞是因为思念谁·井冈山&lt;/p&gt;
 &lt;p&gt;你知不知道思念一个人的滋味&lt;br&gt;就像喝了一杯冰冷的水&lt;br&gt;然后用很长很长的时间&lt;br&gt;一颗一颗流成热泪&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;br&gt;你知不知道寂寞的滋味&lt;br&gt;寂寞是因为思念谁&lt;br&gt;你知不知道痛苦的滋味&lt;br&gt;痛苦是因为想忘记谁&lt;br&gt;你知不知道忘记一个人的滋味&lt;br&gt;就像欣赏一种残酷的美&lt;br&gt;然后用很小很小的声音&lt;br&gt;告诉自己坚强面对&lt;br&gt;你知不知道寂寞的滋味&lt;br&gt;寂寞是因为思念谁&lt;br&gt;你知不知道痛苦的滋味&lt;br&gt;痛苦是因为想忘记谁&lt;/p&gt;
 &lt;p&gt;你知不知道&lt;br&gt;你知不知道&lt;br&gt;你知不知道寂寞的滋味&lt;br&gt;寂寞是因为思念谁&lt;br&gt;你知不知道思念一个人的滋味&lt;br&gt;就像喝了一杯冰冷的水&lt;br&gt;然后用很长很长的时间&lt;br&gt;一颗一颗流成热泪&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;http://music.163.com/#/song?id=5281329&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;寂寞是因为思念谁&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
 </content>
     
     <summary type="html">
@@ -310,7 +318,7 @@
     <link href="http://blog.zhishoumowen.com/2016/03/23/shu-web-ui/"/>
     <id>http://blog.zhishoumowen.com/2016/03/23/shu-web-ui/</id>
     <published>2016-03-23T10:20:51.000Z</published>
-    <updated>2016-05-05T11:01:13.000Z</updated>
+    <updated>2016-05-08T16:11:08.000Z</updated>
     
     <content type="html">&lt;p&gt;网页中没有类似android额dp的东西，因此，如果设计图是120px，那么不论什么样的尺寸下，都是120px，这样体验是不好的，比如在一个&amp;gt;1000px的设备上，120px是一个不从的左侧栏宽度，但是，倒是只有320px的设备上，就显得太大了，应该是能够等比缩放比较好，比如40px；&lt;/p&gt;
 &lt;p&gt;比例的概念是不错的，问题是，网页上好多空间使用比分比是比较困难的：&lt;/p&gt;
@@ -330,6 +338,7 @@
 &lt;h2 id=&quot;Ratio-问题&quot;&gt;&lt;a href=&quot;#Ratio-问题&quot; class=&quot;headerlink&quot; title=&quot;Ratio 问题&quot;&gt;&lt;/a&gt;Ratio 问题&lt;/h2&gt;&lt;p&gt;还有一个问题，在不同的ratio下，1px的感觉是不一样的，比如，在一个ratio = 2 的分辨率下，会用两个像素点来作为1px&lt;br&gt;对图片的影响比较大，如果在一个100x100px的地方，放一个100x100px的图，在ration=1的情况下没问题，但是在ratio=2的情况下，就会显示模糊了，当然了，这个与标尺无关，需要提供额外的资源&lt;/p&gt;
 &lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;built_in&quot;&gt;window&lt;/span&gt;.devicePixelRatio; &lt;span class=&quot;comment&quot;&gt;// mac 显示 为 2&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;h2 id=&quot;CODE&quot;&gt;&lt;a href=&quot;#CODE&quot; class=&quot;headerlink&quot; title=&quot;CODE&quot;&gt;&lt;/a&gt;CODE&lt;/h2&gt;&lt;figure class=&quot;highlight html&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;23&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;&amp;lt;!DOCTYPE html&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;html&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;lang&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;en&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;head&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;meta&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;charset&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;UTF-8&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;meta&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;name&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;viewport&quot;&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;content&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;title&lt;/span&gt;&amp;gt;&lt;/span&gt;REM&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;title&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;style&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;css&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;selector-class&quot;&gt;.btn-320&lt;/span&gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            &lt;span class=&quot;attribute&quot;&gt;width&lt;/span&gt;: &lt;span class=&quot;number&quot;&gt;3.2rem&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            &lt;span class=&quot;attribute&quot;&gt;font-size&lt;/span&gt;: &lt;span class=&quot;number&quot;&gt;14px&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;/span&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;style&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;script&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;javascript&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; html = &lt;span class=&quot;built_in&quot;&gt;document&lt;/span&gt;.getElementsByTagName(&lt;span class=&quot;string&quot;&gt;&#39;html&#39;&lt;/span&gt;)[&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;];&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; width = html.clientWidth;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; base = width &amp;gt; &lt;span class=&quot;number&quot;&gt;1200&lt;/span&gt; ? (&lt;span class=&quot;number&quot;&gt;1200&lt;/span&gt; * &lt;span class=&quot;number&quot;&gt;100&lt;/span&gt; / &lt;span class=&quot;number&quot;&gt;640&lt;/span&gt;) : (width * &lt;span class=&quot;number&quot;&gt;100&lt;/span&gt; / &lt;span class=&quot;number&quot;&gt;640&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        html.style.fontSize = base + &lt;span class=&quot;string&quot;&gt;&#39;px&#39;&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;/span&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;script&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;head&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;body&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;div&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;class&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;btn-320&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;button 320px&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;div&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;body&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;html&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;hr&gt;
 </content>
     
     <summary type="html">
@@ -352,14 +361,16 @@
     <link href="http://blog.zhishoumowen.com/2016/03/18/che-hello/"/>
     <id>http://blog.zhishoumowen.com/2016/03/18/che-hello/</id>
     <published>2016-03-18T15:45:11.000Z</published>
-    <updated>2016-05-05T01:24:21.000Z</updated>
+    <updated>2016-05-08T16:10:47.000Z</updated>
     
     <content type="html">&lt;p&gt;:-) 侧着的笑脸,这是程序员向这个world说hello的方式&lt;/p&gt;
+&lt;hr&gt;
 </content>
     
     <summary type="html">
     
       &lt;p&gt;:-) 侧着的笑脸,这是程序员向这个world说hello的方式&lt;/p&gt;
+&lt;hr&gt;
 
     
     </summary>
@@ -376,9 +387,10 @@
     <link href="http://blog.zhishoumowen.com/2016/03/17/tu-xiuxing/"/>
     <id>http://blog.zhishoumowen.com/2016/03/17/tu-xiuxing/</id>
     <published>2016-03-17T15:46:55.000Z</published>
-    <updated>2016-05-05T11:43:23.000Z</updated>
+    <updated>2016-05-08T16:11:15.000Z</updated>
     
     <content type="html">&lt;p&gt;生命是一场修行,太多的人生道理,每个人都知道,但是却做不到,因为修行不够;有些道理,只有经历了,才能懂得…&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;br&gt;&lt;img src=&quot;/images/upload/xiuxing.jpg&quot; alt=&quot;修行720&quot;&gt;&lt;/p&gt;
+&lt;hr&gt;
 </content>
     
     <summary type="html">
@@ -399,7 +411,7 @@
     <link href="http://blog.zhishoumowen.com/2016/03/17/shu-web-scroll/"/>
     <id>http://blog.zhishoumowen.com/2016/03/17/shu-web-scroll/</id>
     <published>2016-03-17T03:14:51.000Z</published>
-    <updated>2016-05-05T01:52:30.000Z</updated>
+    <updated>2016-05-08T16:11:04.000Z</updated>
     
     <content type="html">&lt;p&gt;这是一个比较恶心的问题,当滚动条出现的时候,页面的可用空间会被浏览器压缩,如果你很在乎细节,如果你盯着屏幕看,就会发现页面突然间往左平移了,这个问题对于一些吹毛求疵的产品们,和一些设计们来说是不能容忍的,当然对于有强迫症的我来说,&lt;br&gt;是能容忍的…&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;解决这个问题,有4种方案,没错,有4种方案:&lt;/p&gt;
@@ -413,6 +425,7 @@
 &lt;p&gt;不解,无招胜有招,为啥要解?这样不是挺好的么&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;扯淡真是伤身体,喝口水先.&lt;/p&gt;
+&lt;hr&gt;
 </content>
     
     <summary type="html">
@@ -433,11 +446,14 @@
     <link href="http://blog.zhishoumowen.com/2016/03/17/ge-ndgwd/"/>
     <id>http://blog.zhishoumowen.com/2016/03/17/ge-ndgwd/</id>
     <published>2016-03-17T02:19:34.000Z</published>
-    <updated>2016-05-05T01:24:21.000Z</updated>
+    <updated>2016-05-08T16:10:52.000Z</updated>
     
     <content type="html">&lt;p&gt;你带给我的·任静静&lt;/p&gt;
 &lt;p&gt;是拥抱吧 也许是心跳&lt;br&gt;一念之间 我忘不掉&lt;br&gt;是守候吧 也许是远走&lt;br&gt;牵你的手 我便拥有&lt;br&gt;推开窗 看见光&lt;br&gt;看见精彩 的绽放&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;br&gt;从未有过 的波浪&lt;br&gt;敲敲打打 在心上&lt;br&gt;与你走过 每一个远方&lt;br&gt;奇迹出现的地方&lt;br&gt;你的模样 是我最精彩的 力量&lt;br&gt;推开窗 看见光&lt;br&gt;看见精彩 的绽放&lt;br&gt;从未有过 的波浪&lt;br&gt;敲敲打打 在心上&lt;br&gt;与你走过 每一个远方&lt;br&gt;奇迹出现的地方&lt;br&gt;你的模样 是我最精彩的 力量&lt;/p&gt;
-&lt;iframe frameborder=&quot;no&quot; border=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; width=&quot;330&quot; height=&quot;86&quot; src=&quot;http://music.163.com/outchain/player?type=2&amp;id=39635615&amp;auto=1&amp;height=66&quot;&gt;&lt;/iframe&gt;</content>
+&lt;iframe frameborder=&quot;no&quot; border=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; width=&quot;330&quot; height=&quot;86&quot; src=&quot;http://music.163.com/outchain/player?type=2&amp;id=39635615&amp;auto=1&amp;height=66&quot;&gt;&lt;/iframe&gt;
+
+&lt;hr&gt;
+</content>
     
     <summary type="html">
     
@@ -458,14 +474,16 @@
     <link href="http://blog.zhishoumowen.com/2016/03/16/wu-init/"/>
     <id>http://blog.zhishoumowen.com/2016/03/16/wu-init/</id>
     <published>2016-03-16T10:57:44.000Z</published>
-    <updated>2016-03-17T03:35:45.000Z</updated>
+    <updated>2016-05-08T16:11:19.000Z</updated>
     
     <content type="html">&lt;p&gt;最近悟了一些东西,重新开始写博客,这个博客系统是托管在Github上的,感谢Nodejs, Markdown, Github, Git, Hexo…&lt;/p&gt;
+&lt;hr&gt;
 </content>
     
     <summary type="html">
     
       &lt;p&gt;最近悟了一些东西,重新开始写博客,这个博客系统是托管在Github上的,感谢Nodejs, Markdown, Github, Git, Hexo…&lt;/p&gt;
+&lt;hr&gt;
 
     
     </summary>

@@ -86,7 +86,7 @@
 <meta property="og:url" content="http://blog.zhishoumowen.com/2016/03/23/shu-web-ui/index.html">
 <meta property="og:site_name" content="简">
 <meta property="og:description" content="从设计师手里拿到一张UI尺寸图，应该怎样转换为代码里的尺寸？应该怎样保证不同尺寸屏幕下的体验一致？">
-<meta property="og:updated_time" content="2016-05-05T11:01:13.000Z">
+<meta property="og:updated_time" content="2016-05-08T16:11:08.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="术·从UI设计图到代码尺寸">
 <meta name="twitter:description" content="从设计师手里拿到一张UI尺寸图，应该怎样转换为代码里的尺寸？应该怎样保证不同尺寸屏幕下的体验一致？">
@@ -331,6 +331,7 @@
 <h2 id="Ratio-问题"><a href="#Ratio-问题" class="headerlink" title="Ratio 问题"></a>Ratio 问题</h2><p>还有一个问题，在不同的ratio下，1px的感觉是不一样的，比如，在一个ratio = 2 的分辨率下，会用两个像素点来作为1px<br>对图片的影响比较大，如果在一个100x100px的地方，放一个100x100px的图，在ration=1的情况下没问题，但是在ratio=2的情况下，就会显示模糊了，当然了，这个与标尺无关，需要提供额外的资源</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">window</span>.devicePixelRatio; <span class="comment">// mac 显示 为 2</span></span><br></pre></td></tr></table></figure>
 <h2 id="CODE"><a href="#CODE" class="headerlink" title="CODE"></a>CODE</h2><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">"en"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"UTF-8"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">"viewport"</span> <span class="attr">content</span>=<span class="string">"initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>REM<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="css"></span><br><span class="line">        <span class="selector-class">.btn-320</span> &#123;</span><br><span class="line">            <span class="attribute">width</span>: <span class="number">3.2rem</span>;</span><br><span class="line">            <span class="attribute">font-size</span>: <span class="number">14px</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    </span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="javascript"></span><br><span class="line">        <span class="keyword">var</span> html = <span class="built_in">document</span>.getElementsByTagName(<span class="string">'html'</span>)[<span class="number">0</span>];</span><br><span class="line">        <span class="keyword">var</span> width = html.clientWidth;</span><br><span class="line">        <span class="keyword">var</span> base = width &gt; <span class="number">1200</span> ? (<span class="number">1200</span> * <span class="number">100</span> / <span class="number">640</span>) : (width * <span class="number">100</span> / <span class="number">640</span>);</span><br><span class="line">        html.style.fontSize = base + <span class="string">'px'</span>;</span><br><span class="line">    </span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"btn-320"</span>&gt;</span>button 320px<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<hr>
 
       
     </div>
@@ -344,6 +345,27 @@
     <div>
       
         
+  <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+    <div>坚持原创技术分享，您的支持将鼓励我继续创作！</div>
+    <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+      <span>赏</span>
+    </button>
+    <div id="QR" style="display: none;">
+      
+        <div id="wechat" style="display: inline-block">
+          <img id="wechat_qr" src="/images/upload/wx.png" alt="zhaobao WeChat Pay"/>
+          <p>微信打赏</p>
+        </div>
+      
+      
+        <div id="alipay" style="display: inline-block">
+          <img id="alipay_qr" src="/images/upload/zfb.jpg" alt="zhaobao Alipay"/>
+          <p>支付宝打赏</p>
+        </div>
+      
+    </div>
+  </div>
+
 
       
     </div>
@@ -465,7 +487,7 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">8</span>
+                <span class="site-state-item-count">9</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>

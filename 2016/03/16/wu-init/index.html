@@ -86,7 +86,7 @@
 <meta property="og:url" content="http://blog.zhishoumowen.com/2016/03/16/wu-init/index.html">
 <meta property="og:site_name" content="简">
 <meta property="og:description" content="最近悟了一些东西,重新开始写博客,这个博客系统是托管在Github上的,感谢Nodejs, Markdown, Github, Git, Hexo…">
-<meta property="og:updated_time" content="2016-03-17T03:35:45.000Z">
+<meta property="og:updated_time" content="2016-05-08T16:11:19.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="无·Init">
 <meta name="twitter:description" content="最近悟了一些东西,重新开始写博客,这个博客系统是托管在Github上的,感谢Nodejs, Markdown, Github, Git, Hexo…">
@@ -314,6 +314,7 @@
 
       
         <p>最近悟了一些东西,重新开始写博客,这个博客系统是托管在Github上的,感谢Nodejs, Markdown, Github, Git, Hexo…</p>
+<hr>
 
       
     </div>
@@ -327,6 +328,27 @@
     <div>
       
         
+  <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+    <div>坚持原创技术分享，您的支持将鼓励我继续创作！</div>
+    <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+      <span>赏</span>
+    </button>
+    <div id="QR" style="display: none;">
+      
+        <div id="wechat" style="display: inline-block">
+          <img id="wechat_qr" src="/images/upload/wx.png" alt="zhaobao WeChat Pay"/>
+          <p>微信打赏</p>
+        </div>
+      
+      
+        <div id="alipay" style="display: inline-block">
+          <img id="alipay_qr" src="/images/upload/zfb.jpg" alt="zhaobao Alipay"/>
+          <p>支付宝打赏</p>
+        </div>
+      
+    </div>
+  </div>
+
 
       
     </div>
@@ -436,7 +458,7 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">8</span>
+                <span class="site-state-item-count">9</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
