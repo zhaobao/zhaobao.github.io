@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.zhishoumowen.com/"/>
-  <updated>2016-05-10T10:59:49.000Z</updated>
+  <updated>2016-05-10T11:04:41.000Z</updated>
   <id>http://blog.zhishoumowen.com/</id>
   
   <author>
@@ -20,10 +20,12 @@
     <link href="http://blog.zhishoumowen.com/2016/05/10/shu-css-gradients/"/>
     <id>http://blog.zhishoumowen.com/2016/05/10/shu-css-gradients/</id>
     <published>2016-05-10T10:43:58.000Z</published>
-    <updated>2016-05-10T10:59:49.000Z</updated>
+    <updated>2016-05-10T11:04:41.000Z</updated>
     
     <content type="html">&lt;h2 id=&quot;一句话解释&quot;&gt;&lt;a href=&quot;#一句话解释&quot; class=&quot;headerlink&quot; title=&quot;一句话解释&quot;&gt;&lt;/a&gt;一句话解释&lt;/h2&gt;&lt;p&gt;渐变，渐变，渐渐改变，不知不觉中，好多事情都变了，你能控制的，你不能控制的，你意识到的，你意识不到的。。。&lt;/p&gt;
+&lt;blockquote&gt;
 &lt;p&gt;CSS gradients are new types of image added in the CSS3 Image Module.&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;h2 id=&quot;起因&quot;&gt;&lt;a href=&quot;#起因&quot; class=&quot;headerlink&quot; title=&quot;起因&quot;&gt;&lt;/a&gt;起因&lt;/h2&gt;&lt;p&gt;曾经很好奇这个是怎么做的&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;/images/upload/gradients/1.png&quot; alt=&quot;1.png&quot;&gt;&lt;br&gt;&lt;img src=&quot;/images/upload/gradients/2.gif&quot; alt=&quot;2.gif&quot;&gt;&lt;/p&gt;
 &lt;h2 id=&quot;CSS3-之-渐变&quot;&gt;&lt;a href=&quot;#CSS3-之-渐变&quot; class=&quot;headerlink&quot; title=&quot;CSS3 之 渐变&quot;&gt;&lt;/a&gt;CSS3 之 渐变&lt;/h2&gt;&lt;p&gt;目前浏览器支持两种渐变：linear-gradient() 和 radial-gradient()&lt;/p&gt;
@@ -47,6 +49,7 @@
 &lt;figure class=&quot;highlight css&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;selector-tag&quot;&gt;background-image&lt;/span&gt;: &lt;span class=&quot;selector-tag&quot;&gt;repeating-radial-gradient&lt;/span&gt;(&lt;span class=&quot;selector-tag&quot;&gt;circle&lt;/span&gt; 20&lt;span class=&quot;selector-tag&quot;&gt;px&lt;/span&gt; &lt;span class=&quot;selector-tag&quot;&gt;at&lt;/span&gt; 100&lt;span class=&quot;selector-tag&quot;&gt;px&lt;/span&gt; 100&lt;span class=&quot;selector-tag&quot;&gt;px&lt;/span&gt;, &lt;span class=&quot;selector-id&quot;&gt;#ACE2E8&lt;/span&gt;, &lt;span class=&quot;selector-tag&quot;&gt;white&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;selector-tag&quot;&gt;background-image&lt;/span&gt;: &lt;span class=&quot;selector-tag&quot;&gt;repeating-radial-gradient&lt;/span&gt;(&lt;span class=&quot;selector-tag&quot;&gt;black&lt;/span&gt;, &lt;span class=&quot;selector-tag&quot;&gt;black&lt;/span&gt; 10&lt;span class=&quot;selector-tag&quot;&gt;px&lt;/span&gt;, &lt;span class=&quot;selector-tag&quot;&gt;white&lt;/span&gt; 10&lt;span class=&quot;selector-tag&quot;&gt;px&lt;/span&gt;, &lt;span class=&quot;selector-tag&quot;&gt;white&lt;/span&gt; 20&lt;span class=&quot;selector-tag&quot;&gt;px&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;p&gt;代码似乎都没有解释的必要了，和linear的唯一区别就是，这个不能通过使用repeat模拟了&lt;br&gt;动画方面没有好看的了，期待发现好的创意&lt;/p&gt;
 &lt;p&gt;兼容性和线性是一致的。&lt;/p&gt;
+&lt;h2 id=&quot;参考&quot;&gt;&lt;a href=&quot;#参考&quot; class=&quot;headerlink&quot; title=&quot;参考&quot;&gt;&lt;/a&gt;参考&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Images/Using_CSS_gradients&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Images/Using_CSS_gradients&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
 </content>
     
