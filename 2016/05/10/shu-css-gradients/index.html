@@ -1,0 +1,707 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css"/>
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="前端,CSS," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
+
+
+
+
+
+
+<meta name="description" content="CSS渐变和PhotoShop的渐变一样，可以很常见，可以不可缺少，可以代替图片，可以看个很风骚，可以优化网页性能">
+<meta property="og:type" content="article">
+<meta property="og:title" content="术·CSS Gradients">
+<meta property="og:url" content="http://blog.zhishoumowen.com/2016/05/10/shu-css-gradients/index.html">
+<meta property="og:site_name" content="简">
+<meta property="og:description" content="CSS渐变和PhotoShop的渐变一样，可以很常见，可以不可缺少，可以代替图片，可以看个很风骚，可以优化网页性能">
+<meta property="og:image" content="http://blog.zhishoumowen.com/images/upload/gradients/1.png">
+<meta property="og:image" content="http://blog.zhishoumowen.com/images/upload/gradients/2.gif">
+<meta property="og:image" content="http://blog.zhishoumowen.com/images/upload/gradients/3.png">
+<meta property="og:image" content="http://blog.zhishoumowen.com/images/upload/gradients/4.png">
+<meta property="og:image" content="http://blog.zhishoumowen.com/images/upload/gradients/5.png">
+<meta property="og:image" content="http://blog.zhishoumowen.com/images/upload/gradients/6.png">
+<meta property="og:image" content="http://blog.zhishoumowen.com/images/upload/gradients/7.png">
+<meta property="og:image" content="http://blog.zhishoumowen.com/images/upload/gradients/8.png">
+<meta property="og:updated_time" content="2016-05-10T10:53:52.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="术·CSS Gradients">
+<meta name="twitter:description" content="CSS渐变和PhotoShop的渐变一样，可以很常见，可以不可缺少，可以代替图片，可以看个很风骚，可以优化网页性能">
+<meta name="twitter:image" content="http://blog.zhishoumowen.com/images/upload/gradients/1.png">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Pisces',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 0,
+      author: '博主'
+    }
+  };
+</script>
+
+  <title> 术·CSS Gradients | 简 </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">简</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle">且行且珍惜</p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-home fa-fw"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-archive fa-fw"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-tags fa-fw"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-user fa-fw"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-rss">
+          <a href="/atom.xml" rel="section">
+            
+              <i class="menu-item-icon fa fa-rss fa-fw"></i> <br />
+            
+            订阅
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                术·CSS Gradients
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-05-10T20:43:58+08:00" content="2016-05-10">
+              2016-05-10
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/术/" itemprop="url" rel="index">
+                    <span itemprop="name">术</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/05/10/shu-css-gradients/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2016/05/10/shu-css-gradients/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h2 id="一句话解释"><a href="#一句话解释" class="headerlink" title="一句话解释"></a>一句话解释</h2><p>CSS gradients are new types of <image> added in the CSS3 Image Module.</image></p>
+<h2 id="起因"><a href="#起因" class="headerlink" title="起因"></a>起因</h2><p>曾经很好奇这个是怎么做的</p>
+<p><img src="/images/upload/gradients/1.png" alt="1.png"><br><img src="/images/upload/gradients/2.gif" alt="2.gif"></p>
+<h2 id="CSS3-之-渐变"><a href="#CSS3-之-渐变" class="headerlink" title="CSS3 之 渐变"></a>CSS3 之 渐变</h2><p>目前浏览器支持两种渐变：linear-gradient() 和 radial-gradient()</p>
+<h2 id="线性渐变"><a href="#线性渐变" class="headerlink" title="线性渐变"></a>线性渐变</h2><p><img src="/images/upload/gradients/3.png" alt="3.png"><br>线性渐变有三个部分组成：起始点，渐变方向，渐变效果，见上图，渐变效果至少是两种颜色，可以指定多个颜色以及每个颜色的占比</p>
+<h3 id="语法"><a href="#语法" class="headerlink" title="语法"></a>语法</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">linear-gradient(</span><br><span class="line">  [ &lt;angle&gt; | to &lt;side-or-corner&gt; ,]? &lt;color-stop&gt; [, &lt;color-stop&gt;]+ )</span><br><span class="line">  \---------------------------------/ \----------------------------/</span><br><span class="line">    Definition of the gradient line        List of color stops</span><br><span class="line"></span><br><span class="line">where &lt;side-or-corner&gt; = [left | right] || [top | bottom]</span><br><span class="line">  and &lt;color-stop&gt;    = &lt;color&gt; [ &lt;percentage&gt; | &lt;length&gt; ]?</span><br></pre></td></tr></table></figure>
+<h3 id="栗子"><a href="#栗子" class="headerlink" title="栗子"></a>栗子</h3><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">background</span>: <span class="selector-tag">linear-gradient</span>(<span class="selector-tag">to</span> <span class="selector-tag">right</span>, <span class="selector-tag">red</span>, <span class="selector-tag">blue</span>);</span><br><span class="line"><span class="selector-tag">background</span>: <span class="selector-tag">linear-gradient</span>(<span class="selector-tag">to</span> <span class="selector-tag">right</span> <span class="selector-tag">bottom</span>, <span class="selector-tag">red</span>, <span class="selector-tag">blue</span>);</span><br><span class="line"><span class="selector-tag">background</span>: <span class="selector-tag">linear-gradient</span>(0<span class="selector-tag">deg</span>, <span class="selector-tag">red</span>, <span class="selector-tag">blue</span>);</span><br><span class="line"><span class="selector-tag">background</span>: <span class="selector-tag">linear-gradient</span>(0<span class="selector-tag">deg</span>, <span class="selector-tag">red</span> 80%, <span class="selector-tag">blue</span>);</span><br><span class="line"></span><br><span class="line">兼容写法，开始点定义不同</span><br><span class="line"><span class="selector-class">.grad</span> &#123;</span><br><span class="line">     <span class="attribute">background-color</span>: <span class="number">#F07575</span>; <span class="comment">/* fallback color if gradients are not supported */</span></span><br><span class="line">     <span class="attribute">background-image</span>: <span class="built_in">-webkit-linear-gradient</span>(top, ret, #bada55); <span class="comment">/* For Chrome 25 and Safari 6, iOS 6.1, Android 4.3 */</span></span><br><span class="line">     <span class="attribute">background-image</span>:    <span class="built_in">-moz-linear-gradient</span>(top, ret, #bada55); <span class="comment">/* For Firefox (3.6 to 15) */</span></span><br><span class="line">     <span class="attribute">background-image</span>:      <span class="built_in">-o-linear-gradient</span>(top, ret, #bada55); <span class="comment">/* For old Opera (11.1 to 12.0) */</span></span><br><span class="line">     <span class="attribute">background-image</span>:        <span class="built_in">linear-gradient</span>(to bottom, ret, #bada55); <span class="comment">/* Standard syntax; must be last */</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="兼容性"><a href="#兼容性" class="headerlink" title="兼容性"></a>兼容性</h3><p><a href="http://caniuse.com/#search=linear-gradient" target="_blank" rel="external">http://caniuse.com/#search=linear-gradient</a></p>
+<p><img src="/images/upload/gradients/4.png" alt="4.png"></p>
+<h3 id="可重复的线性渐变"><a href="#可重复的线性渐变" class="headerlink" title="可重复的线性渐变"></a>可重复的线性渐变</h3><p>语法和上面的一致，不过是可以重复的，似乎可以实现bootstrap的效果了<br><img src="/images/upload/gradients/5.png" alt="5.png"></p>
+<p>background: repeating-linear-gradient(45deg, #5cb85c, #5cb85c 25px, transparent 25px, transparent 50px);<br>解释：从开始到25px的地方是绿色，从25px到50px是透明，然后重复，效果如上图</p>
+<p>动起来！</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">@<span class="keyword">keyframes</span> progress-bar-stripes &#123;</span><br><span class="line">    <span class="selector-tag">from</span> &#123;</span><br><span class="line">        <span class="attribute">background-position</span>: <span class="number">40px</span> <span class="number">0</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="selector-tag">to</span> &#123;</span><br><span class="line">        <span class="attribute">background-position</span>: <span class="number">0</span> <span class="number">0</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-tag">header</span> &#123;</span><br><span class="line">    <span class="attribute">height</span>: <span class="number">10px</span>;</span><br><span class="line">    <span class="comment">/* 从[半透明][透明][半透明][透明] */</span></span><br><span class="line">    <span class="attribute">background-image</span>: <span class="built_in">linear-gradient</span>(</span><br><span class="line">                    45deg,</span><br><span class="line">                    rgba(255,255,255,.15) <span class="number">25%</span>,</span><br><span class="line">                    transparent <span class="number">25%</span>,transparent <span class="number">50%</span>,</span><br><span class="line">                    <span class="built_in">rgba</span>(255,255,255,.15) <span class="number">50%</span>,<span class="built_in">rgba</span>(255,255,255,.15) <span class="number">75%</span>,</span><br><span class="line">                    transparent <span class="number">75%</span>,transparent);</span><br><span class="line">    <span class="attribute">background-size</span>: <span class="number">40px</span> <span class="number">40px</span>;</span><br><span class="line">    <span class="attribute">background-color</span>: <span class="number">#337ab7</span>;</span><br><span class="line">    <span class="attribute">animation</span>: progress-bar-stripes <span class="number">2s</span> linear infinite;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>其实线性渐变确实很简单，技术分为内功和招式，只是招式而已，有了线性渐变的知识，继续看射线渐变，切实如果你懂PS，这些都很容易看懂</p>
+<h2 id="射线渐变"><a href="#射线渐变" class="headerlink" title="射线渐变"></a>射线渐变</h2><p>不同于线性渐变，射线渐变还有一个影响因素，那就是结束时候的形状：circle | ellipse</p>
+<p><img src="/images/upload/gradients/6.png" alt="6.png"></p>
+<h3 id="语法-1"><a href="#语法-1" class="headerlink" title="语法"></a>语法</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">radial-gradient(  [ circle || &lt;length&gt; ] [ at &lt;position&gt; ]? ,</span><br><span class="line">                | [ ellipse || [&lt;length&gt; | &lt;percentage&gt; ]&#123;2&#125;] [ at &lt;position&gt; ]? ,</span><br><span class="line">                | [ [ circle | ellipse ] || &lt;extent-keyword&gt; ] [ at &lt;position&gt; ]? ,</span><br><span class="line">                | at &lt;position&gt; ,</span><br><span class="line">                &lt;color-stop&gt; [ , &lt;color-stop&gt; ]+ )</span><br><span class="line">where &lt;extent-keyword&gt; = closest-corner | closest-side | farthest-corner | farthest-side</span><br><span class="line">  and &lt;color-stop&gt; = &lt;color&gt; [ &lt;percentage&gt; | &lt;length&gt; ]?</span><br></pre></td></tr></table></figure>
+<p><img src="/images/upload/gradients/7.png" alt="7.png"></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">栗子：</span><br><span class="line">从(200, 100)为中心的圆形射线</span><br><span class="line">background-image: radial-gradient(circle at 200px 100px, red, blue);</span><br><span class="line"></span><br><span class="line">从(200, 100)为中心的大小100的圆形射线</span><br><span class="line">background-image: radial-gradient(100px at 200px 100px, red, blue);</span><br><span class="line"></span><br><span class="line">从(100,100)为中心，结束的形状靠近最近的边,保证颜色都能显示出来</span><br><span class="line">background-image: radial-gradient(circle closest-corner at 50px 100px, red, blue);</span><br><span class="line"></span><br><span class="line">从(100,100)为中心，结束的形状靠近最近的角</span><br><span class="line">background-image: radial-gradient(circle closest-side at 100px 100px, red, blue);</span><br><span class="line"></span><br><span class="line">从(100,100)为中心，结束的形状靠近最远的边</span><br><span class="line">background-image: radial-gradient(circle farthest-side at 50px 100px, red, blue);</span><br><span class="line"></span><br><span class="line">从(100,100)为中心，结束的形状靠近最远的角</span><br><span class="line">background-image: radial-gradient(circle farthest-corner at 50px 100px, red, blue);</span><br><span class="line"></span><br><span class="line">看上图</span><br></pre></td></tr></table></figure>
+<h3 id="repeating-radial-gradient"><a href="#repeating-radial-gradient" class="headerlink" title="repeating-radial-gradient"></a>repeating-radial-gradient</h3><p>美不美！<br><img src="/images/upload/gradients/8.png" alt="8.png"></p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">background-image</span>: <span class="selector-tag">repeating-radial-gradient</span>(<span class="selector-tag">circle</span> 20<span class="selector-tag">px</span> <span class="selector-tag">at</span> 100<span class="selector-tag">px</span> 100<span class="selector-tag">px</span>, <span class="selector-id">#ACE2E8</span>, <span class="selector-tag">white</span>);</span><br><span class="line"><span class="selector-tag">background-image</span>: <span class="selector-tag">repeating-radial-gradient</span>(<span class="selector-tag">black</span>, <span class="selector-tag">black</span> 10<span class="selector-tag">px</span>, <span class="selector-tag">white</span> 10<span class="selector-tag">px</span>, <span class="selector-tag">white</span> 20<span class="selector-tag">px</span>);</span><br></pre></td></tr></table></figure>
+<p>代码似乎都没有解释的必要了，和linear的唯一区别就是，这个不能通过使用repeat模拟了<br>动画方面没有好看的了，期待发现好的创意</p>
+<p>兼容性和线性是一致的。</p>
+
+      
+    </div>
+
+    <div>
+      
+        
+      
+    </div>
+
+    <div>
+      
+        
+  <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+    <div>坚持原创技术分享，您的支持将鼓励我继续创作！</div>
+    <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+      <span>赏</span>
+    </button>
+    <div id="QR" style="display: none;">
+      
+        <div id="wechat" style="display: inline-block">
+          <img id="wechat_qr" src="/images/upload/wx.png" alt="zhaobao WeChat Pay"/>
+          <p>微信打赏</p>
+        </div>
+      
+      
+        <div id="alipay" style="display: inline-block">
+          <img id="alipay_qr" src="/images/upload/zfb.jpg" alt="zhaobao Alipay"/>
+          <p>支付宝打赏</p>
+        </div>
+      
+    </div>
+  </div>
+
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/前端/" rel="tag">#前端</a>
+          
+            <a href="/tags/CSS/" rel="tag">#CSS</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/05/08/shu-css-animation/" rel="next" title="术·CSS Animation">
+                <i class="fa fa-chevron-left"></i> 术·CSS Animation
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript>
+      </div>
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar_round.png"
+               alt="zhaobao" />
+          <p class="site-author-name" itemprop="name">zhaobao</p>
+          <p class="site-description motion-element" itemprop="description"></p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">15</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          
+            <div class="site-state-item site-state-categories">
+              
+                <span class="site-state-item-count">6</span>
+                <span class="site-state-item-name">分类</span>
+              
+            </div>
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">9</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/zhaobao/" target="_blank" title="GitHub">
+                  
+                    <i class="fa fa-github"></i>
+                  
+                  GitHub
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://www.fflove.top/" target="_blank" title="如初见">
+                  
+                    <i class="fa fa-heart"></i>
+                  
+                  如初见
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#一句话解释"><span class="nav-number">1.</span> <span class="nav-text">一句话解释</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#起因"><span class="nav-number">2.</span> <span class="nav-text">起因</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#CSS3-之-渐变"><span class="nav-number">3.</span> <span class="nav-text">CSS3 之 渐变</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#线性渐变"><span class="nav-number">4.</span> <span class="nav-text">线性渐变</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#语法"><span class="nav-number">4.1.</span> <span class="nav-text">语法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#栗子"><span class="nav-number">4.2.</span> <span class="nav-text">栗子</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#兼容性"><span class="nav-number">4.3.</span> <span class="nav-text">兼容性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#可重复的线性渐变"><span class="nav-number">4.4.</span> <span class="nav-text">可重复的线性渐变</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#射线渐变"><span class="nav-number">5.</span> <span class="nav-text">射线渐变</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#语法-1"><span class="nav-number">5.1.</span> <span class="nav-text">语法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#repeating-radial-gradient"><span class="nav-number">5.2.</span> <span class="nav-text">repeating-radial-gradient</span></a></li></ol></li></ol></div>
+            
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy;  2015 - 
+  <span itemprop="copyrightYear">2016</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <a href="https://github.com/zhaobao/" target="_blank">
+    <span class="author" itemprop="copyrightHolder">zhaobao</span>
+  </a>
+</div>
+
+<div class="powered-by">
+  由 <a class="theme-link" href="http://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Pisces
+  </a>
+</div>
+
+        
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.0.1"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
+
+
+
+  
+
+
+
+  
+
+    <script type="text/javascript">
+      var disqus_shortname = 'zhishoumv';
+      var disqus_identifier = '2016/05/10/shu-css-gradients/';
+      var disqus_title = '术·CSS Gradients';
+      var disqus_url = 'http://blog.zhishoumowen.com/2016/05/10/shu-css-gradients/';
+
+      function run_disqus_script(disqus_script){
+        var dsq = document.createElement('script');
+        dsq.type = 'text/javascript';
+        dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/' + disqus_script;
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      }
+
+      run_disqus_script('count.js');
+      
+        run_disqus_script('embed.js');
+      
+    </script>
+  
+
+
+
+  
+  
+  
+
+  
+
+  
+
+</body>
+</html>
