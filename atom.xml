@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.zhishoumowen.com/"/>
-  <updated>2016-05-10T10:56:03.000Z</updated>
+  <updated>2016-05-10T10:56:26.000Z</updated>
   <id>http://blog.zhishoumowen.com/</id>
   
   <author>
@@ -19,8 +19,8 @@
     <title>术·CSS Gradients</title>
     <link href="http://blog.zhishoumowen.com/2016/05/10/shu-css-gradients/"/>
     <id>http://blog.zhishoumowen.com/2016/05/10/shu-css-gradients/</id>
-    <published>2016-05-10T12:43:58.000Z</published>
-    <updated>2016-05-10T10:56:03.000Z</updated>
+    <published>2016-05-10T10:43:58.000Z</published>
+    <updated>2016-05-10T10:56:26.000Z</updated>
     
     <content type="html">&lt;h2 id=&quot;一句话解释&quot;&gt;&lt;a href=&quot;#一句话解释&quot; class=&quot;headerlink&quot; title=&quot;一句话解释&quot;&gt;&lt;/a&gt;一句话解释&lt;/h2&gt;&lt;p&gt;CSS gradients are new types of image added in the CSS3 Image Module.&lt;/p&gt;
 &lt;h2 id=&quot;起因&quot;&gt;&lt;a href=&quot;#起因&quot; class=&quot;headerlink&quot; title=&quot;起因&quot;&gt;&lt;/a&gt;起因&lt;/h2&gt;&lt;p&gt;曾经很好奇这个是怎么做的&lt;/p&gt;
