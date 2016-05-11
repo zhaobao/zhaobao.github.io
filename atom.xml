@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.zhishoumowen.com/"/>
-  <updated>2016-05-10T11:04:41.000Z</updated>
+  <updated>2016-05-11T08:10:14.000Z</updated>
   <id>http://blog.zhishoumowen.com/</id>
   
   <author>
@@ -14,6 +14,57 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>UX·无限滚动分页和普通分页的比较</title>
+    <link href="http://blog.zhishoumowen.com/2016/05/11/ux-pagination/"/>
+    <id>http://blog.zhishoumowen.com/2016/05/11/ux-pagination/</id>
+    <published>2016-05-11T07:59:13.000Z</published>
+    <updated>2016-05-11T08:10:14.000Z</updated>
+    
+    <content type="html">&lt;blockquote&gt;
+&lt;p&gt;用户体验设计，真的是一门学问，感觉是产品经理的必修课，坐在地铁上读到了这篇文章，感觉不错，总结下&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;h2 id=&quot;Infinite-Scrolling-无线滚动加载&quot;&gt;&lt;a href=&quot;#Infinite-Scrolling-无线滚动加载&quot; class=&quot;headerlink&quot; title=&quot;Infinite Scrolling 无线滚动加载&quot;&gt;&lt;/a&gt;Infinite Scrolling 无线滚动加载&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;/images/upload/pagination/tb.png&quot; alt=&quot;tb&quot;&gt;&lt;/p&gt;
+&lt;h3 id=&quot;Pros-1-User-Engagement-and-Content-Discovery-用户订阅和内容发现&quot;&gt;&lt;a href=&quot;#Pros-1-User-Engagement-and-Content-Discovery-用户订阅和内容发现&quot; class=&quot;headerlink&quot; title=&quot;Pros 1: User Engagement and Content Discovery 用户订阅和内容发现&quot;&gt;&lt;/a&gt;Pros 1: User Engagement and Content Discovery 用户订阅和内容发现&lt;/h3&gt;&lt;p&gt;但你使用滚动来消费你的内容的时候，可以增加用户的使用时长，特别适合无目的的从信息海中浏览信息，方便用户无目的的发现信息&lt;/p&gt;
+&lt;h3 id=&quot;Pros-2-Scrolling-is-Better-Than-Clicking&quot;&gt;&lt;a href=&quot;#Pros-2-Scrolling-is-Better-Than-Clicking&quot; class=&quot;headerlink&quot; title=&quot;Pros 2: Scrolling is Better Than Clicking&quot;&gt;&lt;/a&gt;Pros 2: Scrolling is Better Than Clicking&lt;/h3&gt;&lt;p&gt;划动比点击效率高多了，比如一个类似幻灯片展示的效果，更是明显&lt;/p&gt;
+&lt;h3 id=&quot;Pros-3-Scrolling-is-Good-For-Mobile-Devices&quot;&gt;&lt;a href=&quot;#Pros-3-Scrolling-is-Good-For-Mobile-Devices&quot; class=&quot;headerlink&quot; title=&quot;Pros 3: Scrolling is Good For Mobile Devices&quot;&gt;&lt;/a&gt;Pros 3: Scrolling is Good For Mobile Devices&lt;/h3&gt;&lt;p&gt;划动天生与手机设备相合&lt;/p&gt;
+&lt;h3 id=&quot;Cons-1-Page-Performance-and-Device-Resources&quot;&gt;&lt;a href=&quot;#Cons-1-Page-Performance-and-Device-Resources&quot; class=&quot;headerlink&quot; title=&quot;Cons 1: Page Performance and Device Resources&quot;&gt;&lt;/a&gt;Cons 1: Page Performance and Device Resources&lt;/h3&gt;&lt;p&gt;页面的加载速度对用户体验来说是至关重要的，可惜，无线的划动加载却很难满足，因为加载的内容太多，导致网页性能的损失；&lt;br&gt;移动端性能有收到限制的，加载过多的资源难免会损耗性能；&lt;/p&gt;
+&lt;h3 id=&quot;Cons2-Item-Search-and-Location&quot;&gt;&lt;a href=&quot;#Cons2-Item-Search-and-Location&quot; class=&quot;headerlink&quot; title=&quot;Cons2: Item Search and Location&quot;&gt;&lt;/a&gt;Cons2: Item Search and Location&lt;/h3&gt;&lt;p&gt;应为无限滚动的问题，很难记录用户上次浏览的位置&lt;/p&gt;
+&lt;h3 id=&quot;Cons3-Irrelevant-Scroll-Bar&quot;&gt;&lt;a href=&quot;#Cons3-Irrelevant-Scroll-Bar&quot; class=&quot;headerlink&quot; title=&quot;Cons3: Irrelevant Scroll Bar&quot;&gt;&lt;/a&gt;Cons3: Irrelevant Scroll Bar&lt;/h3&gt;&lt;p&gt;直接废除了滚动条&lt;/p&gt;
+&lt;h3 id=&quot;Cons4-Lack-of-a-Footer&quot;&gt;&lt;a href=&quot;#Cons4-Lack-of-a-Footer&quot; class=&quot;headerlink&quot; title=&quot;Cons4: Lack of a Footer&quot;&gt;&lt;/a&gt;Cons4: Lack of a Footer&lt;/h3&gt;&lt;p&gt;没有Footer了，可以放到header中，或者使用一个load more来做&lt;/p&gt;
+&lt;h2 id=&quot;Pagination&quot;&gt;&lt;a href=&quot;#Pagination&quot; class=&quot;headerlink&quot; title=&quot;Pagination&quot;&gt;&lt;/a&gt;Pagination&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;/images/upload/pagination/mt.png&quot; alt=&quot;tb&quot;&gt;&lt;/p&gt;
+&lt;h3 id=&quot;Pros-1-Good-Conversion&quot;&gt;&lt;a href=&quot;#Pros-1-Good-Conversion&quot; class=&quot;headerlink&quot; title=&quot;Pros 1: Good Conversion&quot;&gt;&lt;/a&gt;Pros 1: Good Conversion&lt;/h3&gt;&lt;p&gt;当用户搜索的时候，是需要明确知道结果的，这个时候用户期望的是有分页，要符合用户期望&lt;/p&gt;
+&lt;h3 id=&quot;Pros-2-Sense-of-Control&quot;&gt;&lt;a href=&quot;#Pros-2-Sense-of-Control&quot; class=&quot;headerlink&quot; title=&quot;Pros 2: Sense of Control&quot;&gt;&lt;/a&gt;Pros 2: Sense of Control&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;Reaching an end point provides a sense of control 能看到终点，给人一种可控的感觉，可以语气结果，而不是一种没有尽头的感觉，会让人绝望&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&quot;Pros-3-Item-Location&quot;&gt;&lt;a href=&quot;#Pros-3-Item-Location&quot; class=&quot;headerlink&quot; title=&quot;Pros 3: Item Location&quot;&gt;&lt;/a&gt;Pros 3: Item Location&lt;/h3&gt;&lt;p&gt;可以快速定位到自己想要的位置，购物网站推荐用，因为用户可能会回来看&lt;/p&gt;
+&lt;h3 id=&quot;Cons-Extra-Actions&quot;&gt;&lt;a href=&quot;#Cons-Extra-Actions&quot; class=&quot;headerlink&quot; title=&quot;Cons: Extra Actions&quot;&gt;&lt;/a&gt;Cons: Extra Actions&lt;/h3&gt;&lt;p&gt;需要多点一次下一页&lt;/p&gt;
+&lt;h2 id=&quot;When-To-Use-Infinite-Scrolling-Pagination&quot;&gt;&lt;a href=&quot;#When-To-Use-Infinite-Scrolling-Pagination&quot; class=&quot;headerlink&quot; title=&quot;When To Use Infinite Scrolling/Pagination&quot;&gt;&lt;/a&gt;When To Use Infinite Scrolling/Pagination&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;There are only a few instances where infinite scrolling is effective. It’s best suited for sites and apps that boast user-generated content (Twitter, Facebook) or visual content (Pinterest, Instagram). Pagination, on the other hand, is a safe option, and good solution for sites and apps that intend to satisfy the goal-oriented activities of the users.&lt;/p&gt;
+&lt;p&gt;在很有限的情况下会使用无线的划动，尤其是对UGC的部分或者图片化的内容；分页，是一种保险的方案，更适合有目标性内容&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;Conclusion&quot;&gt;&lt;a href=&quot;#Conclusion&quot; class=&quot;headerlink&quot; title=&quot;Conclusion&quot;&gt;&lt;/a&gt;Conclusion&lt;/h2&gt;&lt;p&gt;总结一句：有目的性用分页，无目的的消费用无线滚动&lt;/p&gt;
+&lt;h2 id=&quot;原文&quot;&gt;&lt;a href=&quot;#原文&quot; class=&quot;headerlink&quot; title=&quot;原文&quot;&gt;&lt;/a&gt;原文&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;https://uxplanet.org/ux-infinite-scrolling-vs-pagination-1030d29376f1#.zgn2ucl90&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://uxplanet.org/ux-infinite-scrolling-vs-pagination-1030d29376f1#.zgn2ucl90&lt;/a&gt;&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;用户体验设计，真的是一门学问，感觉是产品经理的必修课，坐在地铁上读到了这篇文章，感觉不错，总结下&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="UX" scheme="http://blog.zhishoumowen.com/categories/UX/"/>
+    
+    
+      <category term="UX" scheme="http://blog.zhishoumowen.com/tags/UX/"/>
+    
+      <category term="分页" scheme="http://blog.zhishoumowen.com/tags/%E5%88%86%E9%A1%B5/"/>
+    
+  </entry>
   
   <entry>
     <title>术·CSS Gradients</title>
@@ -302,9 +353,9 @@
       <category term="术" scheme="http://blog.zhishoumowen.com/categories/%E6%9C%AF/"/>
     
     
-      <category term="开源项目" scheme="http://blog.zhishoumowen.com/tags/%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/"/>
-    
       <category term="前端" scheme="http://blog.zhishoumowen.com/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+      <category term="开源项目" scheme="http://blog.zhishoumowen.com/tags/%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/"/>
     
       <category term="React" scheme="http://blog.zhishoumowen.com/tags/React/"/>
     
