@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.zhishoumowen.com/"/>
-  <updated>2016-05-11T08:10:14.000Z</updated>
+  <updated>2016-05-13T10:57:38.000Z</updated>
   <id>http://blog.zhishoumowen.com/</id>
   
   <author>
@@ -16,11 +16,41 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>画·路飞</title>
+    <link href="http://blog.zhishoumowen.com/2016/05/13/paint-lufei/"/>
+    <id>http://blog.zhishoumowen.com/2016/05/13/paint-lufei/</id>
+    <published>2016-05-13T10:55:12.000Z</published>
+    <updated>2016-05-13T10:57:38.000Z</updated>
+    
+    <content type="html">&lt;p&gt;素描-路飞&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/upload/paint/lufei.jpg&quot; alt=&quot;路飞&quot;&gt;&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;素描-路飞&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/upload/paint/lufei.jpg&quot; alt=&quot;路飞&quot;&gt;&lt;/p&gt;
+
+    
+    </summary>
+    
+      <category term="画" scheme="http://blog.zhishoumowen.com/categories/%E7%94%BB/"/>
+    
+    
+      <category term="画" scheme="http://blog.zhishoumowen.com/tags/%E7%94%BB/"/>
+    
+      <category term="素描" scheme="http://blog.zhishoumowen.com/tags/%E7%B4%A0%E6%8F%8F/"/>
+    
+      <category term="路飞" scheme="http://blog.zhishoumowen.com/tags/%E8%B7%AF%E9%A3%9E/"/>
+    
+  </entry>
+  
+  <entry>
     <title>UX·无限滚动分页和普通分页的比较</title>
     <link href="http://blog.zhishoumowen.com/2016/05/11/ux-pagination/"/>
     <id>http://blog.zhishoumowen.com/2016/05/11/ux-pagination/</id>
     <published>2016-05-11T07:59:13.000Z</published>
-    <updated>2016-05-11T08:10:14.000Z</updated>
+    <updated>2016-05-11T08:19:38.000Z</updated>
     
     <content type="html">&lt;blockquote&gt;
 &lt;p&gt;用户体验设计，真的是一门学问，感觉是产品经理的必修课，坐在地铁上读到了这篇文章，感觉不错，总结下&lt;/p&gt;
@@ -37,7 +67,7 @@
 &lt;h2 id=&quot;Pagination&quot;&gt;&lt;a href=&quot;#Pagination&quot; class=&quot;headerlink&quot; title=&quot;Pagination&quot;&gt;&lt;/a&gt;Pagination&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;/images/upload/pagination/mt.png&quot; alt=&quot;tb&quot;&gt;&lt;/p&gt;
 &lt;h3 id=&quot;Pros-1-Good-Conversion&quot;&gt;&lt;a href=&quot;#Pros-1-Good-Conversion&quot; class=&quot;headerlink&quot; title=&quot;Pros 1: Good Conversion&quot;&gt;&lt;/a&gt;Pros 1: Good Conversion&lt;/h3&gt;&lt;p&gt;当用户搜索的时候，是需要明确知道结果的，这个时候用户期望的是有分页，要符合用户期望&lt;/p&gt;
 &lt;h3 id=&quot;Pros-2-Sense-of-Control&quot;&gt;&lt;a href=&quot;#Pros-2-Sense-of-Control&quot; class=&quot;headerlink&quot; title=&quot;Pros 2: Sense of Control&quot;&gt;&lt;/a&gt;Pros 2: Sense of Control&lt;/h3&gt;&lt;blockquote&gt;
-&lt;p&gt;Reaching an end point provides a sense of control 能看到终点，给人一种可控的感觉，可以语气结果，而不是一种没有尽头的感觉，会让人绝望&lt;/p&gt;
+&lt;p&gt;Reaching an end point provides a sense of control 能看到终点，给人一种可控的感觉，可以预期结果，而不是一种没有尽头的感觉，会让人绝望&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h3 id=&quot;Pros-3-Item-Location&quot;&gt;&lt;a href=&quot;#Pros-3-Item-Location&quot; class=&quot;headerlink&quot; title=&quot;Pros 3: Item Location&quot;&gt;&lt;/a&gt;Pros 3: Item Location&lt;/h3&gt;&lt;p&gt;可以快速定位到自己想要的位置，购物网站推荐用，因为用户可能会回来看&lt;/p&gt;
 &lt;h3 id=&quot;Cons-Extra-Actions&quot;&gt;&lt;a href=&quot;#Cons-Extra-Actions&quot; class=&quot;headerlink&quot; title=&quot;Cons: Extra Actions&quot;&gt;&lt;/a&gt;Cons: Extra Actions&lt;/h3&gt;&lt;p&gt;需要多点一次下一页&lt;/p&gt;
