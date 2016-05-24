@@ -1659,7 +1659,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #1416ff;
+  background: #2ef2ff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2663,4 +2663,7 @@ body {
 }
 .group-picture-container {
   margin-bottom: 6px;
+}
+.menu-item-active a:after {
+  background-color: #d33682;
 }
