@@ -1,19 +1,9 @@
-.site-author-image {
-  float: none;
-  margin: 20px auto;
-  max-width: 100px;
-  border-radius: 50%;
-}
-.site-author-name {
-  text-align: center;
-}
-.links-of-author.motion-element {
-  padding-top: 10px;
-  border-top: 1px solid #ccc;
-}
-.group-picture-container {
-  margin-bottom: 6px;
-}
-.menu-item-active a:after {
-  background-color: #d33682;
-}
+@charset "UTF-8";
+/**
+ * 自己添加的css
+ */
+.pure-g [class*="pure-u"] {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
+.post .post-title {
+  font: bold 25px/1.1 "Helvetica Neue", Helvetica, Arial, sans-serif; }
