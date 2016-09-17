@@ -510,6 +510,7 @@ textarea {
   justify-content: center;
   box-sizing: border-box;
   cursor: pointer;
+  transition: all 400ms;
   background: repeating-linear-gradient(135deg, #cccccc, #cccccc 2px, transparent 2px, transparent 4px); }
   .nav__header a {
     text-decoration: none;
