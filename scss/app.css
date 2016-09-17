@@ -568,8 +568,9 @@ img {
   justify-content: center;
   height: 50px;
   box-sizing: border-box;
-  font-size: 12px;
-  color: #CFDBD5; }
+  font-size: 12px; }
+  .nav__footer a {
+    color: #cccccc; }
 
 .body {
   padding-left: 200px;
