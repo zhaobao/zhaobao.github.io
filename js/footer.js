@@ -5,7 +5,13 @@
         menu.addEventListener("click", function () {
             nav.classList.toggle("show");
         }, false);
-    }, false)
+    }, false);
 
     hljs.initHighlightingOnLoad();
 })();
+
+(function($) {
+    $('img').each(function() {
+        $(this).attr("data-action", "zoom");
+    });
+})(Zepto);
