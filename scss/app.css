@@ -450,24 +450,6 @@ textarea {
   font: inherit;
   /* 2 */ }
 
-html, body {
-  height: 100vh; }
-
-body {
-  color: #333533;
-  background-color: #fffff9;
-  font-family: "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif; }
-
-h1, h2, h3, h4, h5, h6 {
-  font-weight: 300; }
-
-code {
-  overflow-x: scroll; }
-
-img {
-  max-width: 100%;
-  max-height: 500px; }
-
 .img-h300 {
   max-height: 300px; }
 
@@ -721,6 +703,24 @@ img {
   font-weight: 900;
   font-style: normal; }
 
+html, body {
+  height: 100vh; }
+
+body {
+  color: #333533;
+  background-color: #fffff9;
+  font-family: "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 300; }
+
+code {
+  overflow-x: scroll; }
+
+img {
+  max-width: 100%;
+  max-height: 500px; }
+
 .pull-right {
   float: right; }
 
@@ -737,6 +737,30 @@ pre {
   max-width: 100%;
   overflow-x: scroll;
   white-space: pre-wrap; }
+
+h1::before {
+  content: "#";
+  padding-right: 5px; }
+
+h2::before {
+  content: "##";
+  padding-right: 5px; }
+
+h3::before {
+  content: "###";
+  padding-right: 5px; }
+
+h4::before {
+  content: "####";
+  padding-right: 5px; }
+
+h5::before {
+  content: "#####";
+  padding-right: 5px; }
+
+h6::before {
+  content: "######";
+  padding-right: 5px; }
 
 img[data-action="zoom"] {
   cursor: pointer;
