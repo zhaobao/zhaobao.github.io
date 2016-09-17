@@ -469,6 +469,7 @@ textarea {
   margin: 10px;
   cursor: pointer;
   background: #fffff9;
+  transition: all 400ms;
   display: none; }
   .menu:hover {
     background: repeating-linear-gradient(135deg, #cccccc, #cccccc 2px, transparent 2px, transparent 4px); }
@@ -527,7 +528,8 @@ textarea {
     opacity: 0.8;
     box-sizing: border-box;
     list-style-type: none;
-    border-bottom: 1px solid #cccccc; }
+    border-bottom: 1px solid #cccccc;
+    transition: all 400ms; }
     .nav__body .nav__item:hover {
       cursor: pointer;
       box-sizing: border-box;
@@ -575,7 +577,8 @@ textarea {
   border-top-width: 0;
   border-right-width: 0;
   display: flex;
-  align-items: center; }
+  align-items: center;
+  transition: all 400ms; }
   .body__header:hover {
     border-color: #242423; }
 
@@ -592,10 +595,11 @@ textarea {
     box-sizing: border-box;
     opacity: 0.8;
     padding: 20px;
-    line-height: 1.5; }
+    line-height: 1.5;
+    transition: all 400ms; }
     .body__content .body__item:hover {
       opacity: 1;
-      border-color: #242423; }
+      border: 1px solid #242423; }
   .body__content .post__title {
     display: flex;
     flex-direction: row;
@@ -617,7 +621,8 @@ textarea {
       text-align: center;
       border: 1px solid #cccccc;
       text-decoration: none;
-      color: #242423; }
+      color: #242423;
+      transition: all 400ms; }
       .body__content .post_tags .post_tag:hover {
         border-color: #242423; }
   .body__content .post_tag_item {
