@@ -706,6 +706,9 @@ textarea {
 html, body {
   height: 100vh; }
 
+html {
+  overflow-x: hidden; }
+
 body {
   color: #333533;
   background-color: #fffff9;
