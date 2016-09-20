@@ -770,6 +770,9 @@ h6::before {
   content: "######";
   padding-right: 5px; }
 
+#disqus_thread {
+  padding: 20px; }
+
 img[data-action="zoom"] {
   cursor: pointer;
   cursor: -webkit-zoom-in;
