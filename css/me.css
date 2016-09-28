@@ -1,9 +1,0 @@
-@charset "UTF-8";
-/**
- * 自己添加的css
- */
-.pure-g [class*="pure-u"] {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
-
-.post .post-title {
-  font: bold 25px/1.1 "Helvetica Neue", Helvetica, Arial, sans-serif; }
