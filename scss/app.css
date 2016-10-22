@@ -554,7 +554,8 @@ textarea {
   justify-content: center;
   height: 50px;
   box-sizing: border-box;
-  font-size: 12px; }
+  font-size: 12px;
+  padding: 12px; }
   .nav__footer a {
     color: #cccccc; }
 
