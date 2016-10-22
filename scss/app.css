@@ -558,6 +558,8 @@ textarea {
   padding: 12px; }
   .nav__footer a {
     color: #cccccc; }
+  .nav__footer a:hover {
+    color: black; }
 
 .body {
   padding-left: 200px;
