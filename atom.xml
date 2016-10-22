@@ -1,0 +1,515 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Line</title>
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://www.zhaobao.site/"/>
+  <updated>2016-10-22T16:40:43.000Z</updated>
+  <id>http://www.zhaobao.site/</id>
+  
+  <author>
+    <name>zhaobao</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Uploader Box</title>
+    <link href="http://www.zhaobao.site/2016/10/22/shu-uploader/"/>
+    <id>http://www.zhaobao.site/2016/10/22/shu-uploader/</id>
+    <published>2016-10-22T09:30:42.000Z</published>
+    <updated>2016-10-22T16:40:43.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>浏览器默认的上传确实很丑。<br>来来回回也折腾过好几次上传了，本人有点强迫症，要么是觉得UI不够理想，要么是支持类型和功能不全，要么是第三方的插件太重，甚至还有些收费的，也是醉了。<br>在<code>IE6</code>占优比较大的时候，自己写一个上传确实很麻烦，甚至还需要用<code>Flash</code>来做辅助，比较经典的，比如<a href="http://www.uploadify.com/" target="_blank" rel="external"><code>uploadify</code></a>; 不过这几年好多了，随着<code>H5</code>的普及和移动互联网的普及，兼容性这个问题反而不是问题了，这是个好事，至少可以把主力放到体验和逻辑上，而不是没有意义的兼容性上。</p>
+<a id="more"></a>
+<p>之前做过一个图片的上传，效果还不错的，效果类似 <a href="https://alpha.wallhaven.cc/" target="_blank" rel="external">wallheaven</a> 的上传类似，可以支持图片的预览，也可以动态的添加和删除图片，目前公司内部后台使用的是这个，稳定性都还不错，不过也是有问题的：</p>
+<ul>
+<li>发现在限制了<code>input</code>的<code>accept</code>属性后，点击吊起上传会特别慢，目前还在解决这个问题</li>
+<li>因为是图片上传，可以通过<code>FileReader</code>来做预览，但是其他类的文件却无法预览，整体效果不太和谐</li>
+</ul>
+<p>因此，用了半天的时间，从自己设计<code>Axure</code>原型图，到寻找配色，到前端结构选型，到成品，自己写了一个感觉还不错的上传：</p>
+<ul>
+<li>支持多种类型文件上传</li>
+<li>更和谐的配色和<code>UI</code></li>
+<li>依然支持进度以及单文件和多文件和过滤的制定</li>
+</ul>
+<h4 id="浏览器市场份额"><a href="#浏览器市场份额" class="headerlink" title="浏览器市场份额"></a>浏览器市场份额</h4><p><a href="http://tongji.baidu.com/data/browser" target="_blank" rel="external">百度统计</a>，我就想呵呵了，这里面没有<code>360</code>，这是不科学的。<br><img src="/images/upload/uploader/baidu.png" alt="百度"><br><a href="http://www.netmarketshare.com/" target="_blank" rel="external">NetMarketShare</a> 统计<br><img src="/images/upload/uploader/net.png" alt="net"><br><a href="http://www.w3schools.com/browsers/default.asp" target="_blank" rel="external">W3C</a> 数据<br><img src="/images/upload/uploader/w3c.png" alt="w3c"></p>
+<p>从数据中可以看出，<code>IE6</code>，机会都没有了，<code>IE</code>里面也就<code>IE8</code>份额还是不错的，所以现在的一些主流的框架都是支持<code>IE8</code>的，当然，我这个还是没有到<code>IE8</code>的，具体在<code>IE8</code>上的效果自己还没有测试，等测试了补上试试。</p>
+<h4 id="图片上传"><a href="#图片上传" class="headerlink" title="图片上传"></a>图片上传</h4><p>以下是演示<code>Demo</code>, 整体效果还不错，不论是嵌在<code>dialog</code>中使用，还是在<code>form</code>里使用，效果都还不错<br><img src="/images/upload/uploader/img-uploader.gif" alt="img uploader"></p>
+<p><a href="https://github.com/zhaobao/image-uploader" target="_blank" rel="external">源码地址</a></p>
+<h4 id="算是第二版的上传吧"><a href="#算是第二版的上传吧" class="headerlink" title="算是第二版的上传吧"></a>算是第二版的上传吧</h4><ul>
+<li><p>Axure 设置<br>真正做出来还是有一点误差的<br><img src="/images/upload/uploader/axure.png" alt="uploader axure"></p>
+</li>
+<li><p>uplaoder 初始状态，有没有感觉很干净<br><img src="/images/upload/uploader/uploader-empty.png" alt="uploader emtpy"></p>
+</li>
+<li><p>uploader 完成状态，好看，哈啊哈<br><img src="/images/upload/uploader/uploader-done.png" alt="uploader emtpy"></p>
+</li>
+<li><p>uploader 动图演示，右上角已经改过了，鼠标放上的时候背景颜色没有这么暗，已经修改了<br><img src="/images/upload/uploader.gif" alt="picture"></p>
+</li>
+<li><p>uploader 源代码和具体的使用方法，<code>github</code>中有详细的解释<br><a href="https://github.com/zhaobao/uploader-box" target="_blank" rel="external">upload box</a></p>
+</li>
+</ul>
+<div class="tip"><br>    每个做前端的都是好样的，不说各种技术的变革，主要是没有多少积累，工作5年也许和2年差不多，与君共勉。<br></div>
+
+
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;浏览器默认的上传确实很丑。&lt;br&gt;来来回回也折腾过好几次上传了，本人有点强迫症，要么是觉得UI不够理想，要么是支持类型和功能不全，要么是第三方的插件太重，甚至还有些收费的，也是醉了。&lt;br&gt;在&lt;code&gt;IE6&lt;/code&gt;占优比较大的时候，自己写一个上传确实很麻烦，甚至还需要用&lt;code&gt;Flash&lt;/code&gt;来做辅助，比较经典的，比如&lt;a href=&quot;http://www.uploadify.com/&quot;&gt;&lt;code&gt;uploadify&lt;/code&gt;&lt;/a&gt;; 不过这几年好多了，随着&lt;code&gt;H5&lt;/code&gt;的普及和移动互联网的普及，兼容性这个问题反而不是问题了，这是个好事，至少可以把主力放到体验和逻辑上，而不是没有意义的兼容性上。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="术" scheme="http://www.zhaobao.site/categories/%E6%9C%AF/"/>
+    
+    
+      <category term="前端" scheme="http://www.zhaobao.site/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+      <category term="UI" scheme="http://www.zhaobao.site/tags/UI/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Something About</title>
+    <link href="http://www.zhaobao.site/2016/10/19/shu-api/"/>
+    <id>http://www.zhaobao.site/2016/10/19/shu-api/</id>
+    <published>2016-10-19T08:35:50.000Z</published>
+    <updated>2016-10-22T16:18:23.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>自己写<code>API</code>也有段时间了，哦，有几年了吧，说去来惭愧，一直想总结下，一直有很多想法，却不知道从何时说起，诸多说不清的东西吧。</p>
+<a id="more"></a>
+<h3 id="关于-“轻”-“简”-之道"><a href="#关于-“轻”-“简”-之道" class="headerlink" title="关于 “轻” “简” 之道"></a>关于 “轻” “简” 之道</h3><p>好久没有写东西了，突然写，还是有点不在状态呢。</p>
+<p>轻，简，其实是很难下一个定义的，不过从反面来说还有能解释的，轻简不是什么。</p>
+<p>轻简不是简陋。这个和国画的留白有点相似，留白给人一定的思考和想象的空间，给人自由，不似北方山脉的崇山峻岭，更像南方的小桥流水，也许从面上看表现出的是简单的，但是从内里看却不乏内涵，不缺层次；就像一个简简单单的页面，也许背后有成千上万的服务器在支持。</p>
+<p>轻简不是单纯的简单。简单是和复杂相对的，但是轻简是不排斥复杂的；就像Mac的设计，从外观看真的很简单，甚至就像是一块金属，但是它确实很复杂，你一次简单的敲击，背后却是由成千上万个的电子元件配合才能完成的。</p>
+<p>轻简更像是一个秩序，一种隐藏在所有的事物背后的一种清晰的逻辑。</p>
+<h3 id="关于-PHP-和-Golang"><a href="#关于-PHP-和-Golang" class="headerlink" title="关于 PHP 和 Golang"></a>关于 PHP 和 Golang</h3><p>在这里不想争论哪种语言比较好的肤浅问题，真的是没意义。<br>本人先后用过3年的PHP和半年的Golang，先后参与的项目也有十几个了，有一点点的感悟。</p>
+<p>每种语言都有自己擅长和不擅长的东西，就像人一样，有人协调性很好，很擅长跳舞；有人逻辑思维好，数学能轻松拿100分；当然，舞蹈家也许数学很烂；数学家可能五音都补全。</p>
+<p>PHP是一门脚本语言，不是系统语言，他也许不能写一个服务器，不能写一个数据库，但是他却有系统无言无比拟的特征：解释性语言，也许说的比较抽象，举个例子来说，我用PHP写了一个网页，当我想更改的时候，我只需要打开编辑器，编辑，保存，就完成了，效率是真的高啊。在没有用过编译性的语言之前，没有觉得这个特点有多么的亮眼，当你体会了编译，等待，等待，等待。。。之后，才会体会到这点真好。就像，你之前谈了一个女朋友是一个女汉子，后来谈了一个温柔的姑娘，才懂得一个不盯着你，事事有担当的女孩子是多么的难得，当然，我这不是贬低温柔的女孩子；</p>
+<p>之前用PHP主要是写API，解释过滤请求，查询缓存数据，返回整理数据，无非是这三件事；这块PHP很擅长，开发快，效率高，招人也好招，甚至有很多的框架已经把这一套都做完了，你要做的就是写model，写controller，然后，就没有然后了；当然如果你要自己追求高效，也没问题，但是怎么说呢，从PHP性质上来说能性能高到哪里去呢？不过对于高IO的网络应用，这些时间但是人类感知不到的；或者你是一个很执着的人，Facebook有一个项目，把PHP直接编译成二进制码，够快了吧；国内看，似乎新浪微博，百度还是会用PHP的。</p>
+<p>PHP写后台页面也是比较适合的，是一个经典的做动态页面的方式，不过这种也是比较老的方式了，在前后端分离的大势之下，PHP写页面这种会越来越少了，用来做服务会更多，Ajax的崛起，单页应用的普及，前端的系统化提升，PHP终将会走向一个纯后端的语言。</p>
+<p>PHP是不适合积累的。为什么这么说呢，写过的人可以仔细思考下，你写了一年和写了两年，对PHP的理解，对数据结构甚至算法的理解有多么？其实也不是PHP的错，只能说如果你要研究的话，都不会拿PHP来研究，因为PHP隐藏了数据结构，隐藏了很多的细节，所以之后的积累都是架构设计的积累，是良好规范的积累。</p>
+<p>Golang是一种编译性质的系统语言。他可以做到很高效，如果用来做CPU密集型的任务的话，可能会甩出PHP很远。有些女孩很奇怪，当你第一眼看到的时候，你就会知道，这是你的妻子，是能陪你走一辈子的人，就像我感觉golang一样，当然一辈子也许没有那么夸张。</p>
+<p>Golang是性感的。为什么这么说呢？Golang作为一门系统级的语言，却有着媲美脚本语言的开发效率，我从入手到写项目，用了一周的时间，阅读了英文原版的《Go语言圣经》，再次感慨这本书写的真好，同时也感慨作者对语言的理解。都说Golang是微服务的基础，一个go routain大约占用4k的内存，你可以计算下一个8G的服务器能承受多少的并发routain，当然这个是理论可行性，实际会打折扣的。</p>
+<p>Golang真的是有个性，在写PHP的时候有所谓的编码规范，缩进规范，Golang没有缩进规范，go fmt工具格式化，搞定了，这个看到都能哭的特征啊！当年为了PHP一个空格，不知道买了多少的麦旋风啊；Golang没有隐藏数据类型，没有过多的while循环，foreach什么的；虽然没有那么多的第三方库，但是缺很容易自己造轮子；golang甚至没有自己专业的编辑器，但是依然受到这么多人喜欢啊。</p>
+<p>先后用Golang写过6个上线项目，从API到后台，都比较顺利，代码量很少，很精简，但是又很高效，一个go routain的打印log，如果用PHP得用多少东西啊。</p>
+<p>当然。Golang的部署却不那么顺利，比如我是用MAC开发，那么我就要部署到Linux上，就需要到Linux上编译，然后才能部署，当然你可以说交叉编译也行，而且部署的时候会有短暂的服务不可用期，虽然也可以解决，但是却不是从Golang层次来解决的。</p>
+<p>说了这么多，学习成本有多高呢？这么说，一个性感的妹子追求成本有多高呢？如果你底子好，英语好，能自己读懂妹子内心，那么很短就能学会；如果你排斥英文，喜欢找度娘取经，那么就会很慢，甚至以后学习也会很慢了。</p>
+<h3 id="完"><a href="#完" class="headerlink" title="完"></a>完</h3><div class="tip info"><br>    写的人一塌糊涂，看的人一塌糊涂，甚幸。<br></div>
+]]></content>
+    
+    <summary type="html">
+    
+      一些关于，关于轻简之道，关于PHP和Golang，关于爬虫安全，关于小公司无运维
+    
+    </summary>
+    
+      <category term="术" scheme="http://www.zhaobao.site/categories/%E6%9C%AF/"/>
+    
+    
+      <category term="API" scheme="http://www.zhaobao.site/tags/API/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>画·路飞</title>
+    <link href="http://www.zhaobao.site/2016/05/13/tu-lufei/"/>
+    <id>http://www.zhaobao.site/2016/05/13/tu-lufei/</id>
+    <published>2016-05-13T10:55:12.000Z</published>
+    <updated>2016-10-22T16:34:18.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>素描-路飞<br><img src="/images/upload/paint/lufei.jpg" alt="路飞"></p>
+<a id="more"></a>
+<div class="tip info"><br>天空飘来五个字，那都不是事！开开心心每天，比什么都好。<br></div>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;素描-路飞&lt;br&gt;&lt;img src=&quot;/images/upload/paint/lufei.jpg&quot; alt=&quot;路飞&quot;&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="画" scheme="http://www.zhaobao.site/categories/%E7%94%BB/"/>
+    
+    
+      <category term="画" scheme="http://www.zhaobao.site/tags/%E7%94%BB/"/>
+    
+      <category term="素描" scheme="http://www.zhaobao.site/tags/%E7%B4%A0%E6%8F%8F/"/>
+    
+      <category term="路飞" scheme="http://www.zhaobao.site/tags/%E8%B7%AF%E9%A3%9E/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>悟·从繁入简</title>
+    <link href="http://www.zhaobao.site/2016/05/05/wu-simple/"/>
+    <id>http://www.zhaobao.site/2016/05/05/wu-simple/</id>
+    <published>2016-05-05T11:56:25.000Z</published>
+    <updated>2016-09-17T16:37:44.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>人成熟的标志是什么? 都说大人的世界很复杂, 有太多的事情需要处理,事业,家庭,关系…<br>当你处理好了这些事情的时候,就成熟了么?<br><a id="more"></a></p>
+<p>从繁入简,是一种新生.</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;人成熟的标志是什么? 都说大人的世界很复杂, 有太多的事情需要处理,事业,家庭,关系…&lt;br&gt;当你处理好了这些事情的时候,就成熟了么?&lt;br&gt;
+    
+    </summary>
+    
+      <category term="悟" scheme="http://www.zhaobao.site/categories/%E6%82%9F/"/>
+    
+    
+      <category term="生活" scheme="http://www.zhaobao.site/tags/%E7%94%9F%E6%B4%BB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>术·北京互联网公司分布(前端)</title>
+    <link href="http://www.zhaobao.site/2016/05/05/open-map/"/>
+    <id>http://www.zhaobao.site/2016/05/05/open-map/</id>
+    <published>2016-05-05T02:19:22.000Z</published>
+    <updated>2016-09-17T16:37:28.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>在北京孩子，每天上下班很痛苦，挤地铁，等公交，吃早饭。。。<br>想做一个map，大体统计下拉勾网上互联网公司的位置，目的是为了找一个比较好方便的租房位置，以下是成果和构思过程。<br><a id="more"></a></p>
+<h2 id="可行性分析"><a href="#可行性分析" class="headerlink" title="可行性分析"></a>可行性分析</h2><p>一开始想做个静态地图，似乎效果不好，如果能取到地理位置，然后调用 map api 就好了，因此：</p>
+<p>1 尝试拿到拉勾网互联网公司的经度纬度</p>
+<ul>
+<li>列表数据比较容易获取, 可以通过模拟Ajax请求搞定</li>
+<li>详情数据做了页面静态化，需要拿到positionId，然后得到页面，然后通过解析页面来获取位置信息</li>
+<li>为了防止被封杀，自己做文件缓存</li>
+</ul>
+<p>2 调用百度Map Api，进行标记</p>
+<ul>
+<li>因为拉钩上并没有具体的经纬度信息，因此需要从地址解析到经纬度的结构</li>
+<li>需要在地图上增加标记</li>
+<li>需要在标记上增加公司名称的标签</li>
+</ul>
+<p>3 增加位置房屋价格信息</p>
+<ul>
+<li>抓取比如我爱我家的数据</li>
+<li>如何通过经纬度得到比较密集的区域？选中区域画格子，得到每个格子定点的周围点数多少，然后排序，画圆</li>
+</ul>
+<h2 id="成果以及结论"><a href="#成果以及结论" class="headerlink" title="成果以及结论"></a>成果以及结论</h2><ul>
+<li>互联网公司大部分分布在朝阳区和海淀区</li>
+<li>从地铁上看，主要集中在地铁国贸、中关村以及望京附近</li>
+<li>数据供参考，没啥实际的意义，娱乐一下，一笑了之，谢</li>
+</ul>
+<blockquote>
+<p>爬去的源代码不展示了，尊重别人就是尊重自己。</p>
+</blockquote>
+<h2 id="技术"><a href="#技术" class="headerlink" title="技术"></a>技术</h2><ul>
+<li>Python</li>
+<li>Scrapy</li>
+<li>H5</li>
+<li>CSS</li>
+<li>Javascript</li>
+</ul>
+<p><a href="/open/map/?target=blank">北京前端互联网公司分布图</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;在北京孩子，每天上下班很痛苦，挤地铁，等公交，吃早饭。。。&lt;br&gt;想做一个map，大体统计下拉勾网上互联网公司的位置，目的是为了找一个比较好方便的租房位置，以下是成果和构思过程。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="术" scheme="http://www.zhaobao.site/categories/%E6%9C%AF/"/>
+    
+    
+      <category term="扯淡" scheme="http://www.zhaobao.site/tags/%E6%89%AF%E6%B7%A1/"/>
+    
+      <category term="前端" scheme="http://www.zhaobao.site/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>歌·痛彻心扉</title>
+    <link href="http://www.zhaobao.site/2016/04/13/ge-tcxf-md/"/>
+    <id>http://www.zhaobao.site/2016/04/13/ge-tcxf-md/</id>
+    <published>2016-04-12T16:45:03.000Z</published>
+    <updated>2016-09-17T16:37:22.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>怎么能够让我不再想你<br>也许爱你爱到最后只能伤心<br>已经有了离开你的勇气<br>在我的梦里你不是唯一<br><a id="more"></a><br>我想要再回到你温暖的怀里<br>感觉你的心跳你的呼吸<br>想到天长地久对于我们<br>渴望而不可及<br>难道命运注定就此分离</p>
+<p>爱你痛彻我心扉<br>给了你仅有的一片天<br>回忆的碎片 撞翻我心中思念的火蕊<br>燃烧我整座的堡垒</p>
+<p>爱你痛彻我心扉<br>少了你还残留一片天<br>我想我只会紧握住手中凋零的玫瑰<br>品尝你赐给的泪水<br>或许你曾为我流泪<br>如今你让我痛彻心扉</p>
+<p>我想要再回到你温暖的怀里<br>感觉你的心跳你的呼吸<br>想到天长地久对于我们<br>渴望而不可及<br>难道命运注定就此分离</p>
+<p>爱你痛彻我心扉<br>给了你仅有的一片天<br>回忆的碎片撞翻我心中思念的火蕊<br>燃烧我整座的堡垒</p>
+<p>爱你痛彻我心扉<br>少了你还残留一片天<br>我想我只会紧握住手中凋零的玫瑰<br>品尝你赐给的泪水<br>或许你曾为我流泪<br>如今你让我痛彻心扉<br>如今你让我痛彻心扉</p>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="http://music.163.com/outchain/player?type=2&id=103913&auto=1&height=66"></iframe>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;怎么能够让我不再想你&lt;br&gt;也许爱你爱到最后只能伤心&lt;br&gt;已经有了离开你的勇气&lt;br&gt;在我的梦里你不是唯一&lt;br&gt;
+    
+    </summary>
+    
+      <category term="歌" scheme="http://www.zhaobao.site/categories/%E6%AD%8C/"/>
+    
+    
+      <category term="歌曲" scheme="http://www.zhaobao.site/tags/%E6%AD%8C%E6%9B%B2/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>术·网易云音乐React版(非官方)</title>
+    <link href="http://www.zhaobao.site/2016/04/08/open-music/"/>
+    <id>http://www.zhaobao.site/2016/04/08/open-music/</id>
+    <published>2016-04-08T13:53:51.000Z</published>
+    <updated>2016-09-17T16:37:33.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>近来学习React，脑袋一热，为了向良心软件网易云音乐致敬，写了个React版本，部分图片和音乐是从网上获取，再次致敬。<br><a id="more"></a></p>
+<h2 id="截图为证"><a href="#截图为证" class="headerlink" title="截图为证"></a>截图为证</h2><p><img src="/images/upload/music.png" alt="截图为证"></p>
+<h2 id="Demo地址"><a href="#Demo地址" class="headerlink" title="Demo地址"></a>Demo地址</h2><p><a href="/open/music/?target=blank">猛戳下面链接 music</a></p>
+<h2 id="用到的技术栈"><a href="#用到的技术栈" class="headerlink" title="用到的技术栈"></a>用到的技术栈</h2><ul>
+<li>H5</li>
+<li>CSS3</li>
+<li>React</li>
+<li>Flux</li>
+<li>Webpack</li>
+<li>Gulp</li>
+</ul>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;近来学习React，脑袋一热，为了向良心软件网易云音乐致敬，写了个React版本，部分图片和音乐是从网上获取，再次致敬。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="术" scheme="http://www.zhaobao.site/categories/%E6%9C%AF/"/>
+    
+    
+      <category term="前端" scheme="http://www.zhaobao.site/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+      <category term="React" scheme="http://www.zhaobao.site/tags/React/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>悟·佛曰苦</title>
+    <link href="http://www.zhaobao.site/2016/04/04/wu-tongku/"/>
+    <id>http://www.zhaobao.site/2016/04/04/wu-tongku/</id>
+    <published>2016-04-04T05:09:49.000Z</published>
+    <updated>2016-10-22T16:34:49.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>佛曰，人生有八苦。<br><a id="more"></a></p>
+<p>生<br>老<br>病<br>死<br>爱别离<br>怨憎会<br>求不得<br>五阴炽盛</p>
+<p>在你人生的某个阶段，总要体会这些苦，逃不过的。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;佛曰，人生有八苦。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="悟" scheme="http://www.zhaobao.site/categories/%E6%82%9F/"/>
+    
+    
+      <category term="生活" scheme="http://www.zhaobao.site/tags/%E7%94%9F%E6%B4%BB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>歌·寂寞是因为思念谁</title>
+    <link href="http://www.zhaobao.site/2016/04/04/ge-jmdzw/"/>
+    <id>http://www.zhaobao.site/2016/04/04/ge-jmdzw/</id>
+    <published>2016-04-04T04:54:59.000Z</published>
+    <updated>2016-09-17T16:37:13.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>寂寞是因为思念谁·井冈山</p>
+<p>你知不知道思念一个人的滋味<br>就像喝了一杯冰冷的水<br>然后用很长很长的时间<br>一颗一颗流成热泪<br><a id="more"></a><br>你知不知道寂寞的滋味<br>寂寞是因为思念谁<br>你知不知道痛苦的滋味<br>痛苦是因为想忘记谁<br>你知不知道忘记一个人的滋味<br>就像欣赏一种残酷的美<br>然后用很小很小的声音<br>告诉自己坚强面对<br>你知不知道寂寞的滋味<br>寂寞是因为思念谁<br>你知不知道痛苦的滋味<br>痛苦是因为想忘记谁</p>
+<p>你知不知道<br>你知不知道<br>你知不知道寂寞的滋味<br>寂寞是因为思念谁<br>你知不知道思念一个人的滋味<br>就像喝了一杯冰冷的水<br>然后用很长很长的时间<br>一颗一颗流成热泪</p>
+<p><a href="http://music.163.com/#/song?id=5281329" target="_blank" rel="external">寂寞是因为思念谁</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;寂寞是因为思念谁·井冈山&lt;/p&gt;
+&lt;p&gt;你知不知道思念一个人的滋味&lt;br&gt;就像喝了一杯冰冷的水&lt;br&gt;然后用很长很长的时间&lt;br&gt;一颗一颗流成热泪&lt;br&gt;
+    
+    </summary>
+    
+      <category term="歌" scheme="http://www.zhaobao.site/categories/%E6%AD%8C/"/>
+    
+    
+      <category term="歌曲" scheme="http://www.zhaobao.site/tags/%E6%AD%8C%E6%9B%B2/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>术·从UI设计图到代码尺寸</title>
+    <link href="http://www.zhaobao.site/2016/03/23/shu-web-ui/"/>
+    <id>http://www.zhaobao.site/2016/03/23/shu-web-ui/</id>
+    <published>2016-03-23T10:20:51.000Z</published>
+    <updated>2016-09-17T03:08:00.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>网页中没有类似android额dp的东西，因此，如果设计图是120px，那么不论什么样的尺寸下，都是120px，这样体验是不好的，比如在一个&gt;1000px的设备上，120px是一个不从的左侧栏宽度，但是，倒是只有320px的设备上，就显得太大了，应该是能够等比缩放比较好，比如40px；</p>
+<p>比例的概念是不错的，问题是，网页上好多空间使用比分比是比较困难的：</p>
+<ul>
+<li>首先你把UI图都换算成比例</li>
+<li>页面上的元素的比例依据是父类元素，计算起来就吐血了</li>
+</ul>
+<p>有没有一个不是相对父元素的东西，有，那就是rem</p>
+<a id="more"></a>
+<blockquote>
+<p>rem values were invented in order to sidestep the compounding problem. rem values are relative to the root html element, not the parent element. In other words, it lets you specify a font size in a relative fashion without being affected by the size of the parent, thereby eliminating compounding.</p>
+</blockquote>
+<p>这个单位是相对html的font-size来说的，好了，实践的解决方法：根据实际的屏幕尺寸，动态计算顶级的font-size</p>
+<p>而且最好做到换算起来简单，公式如下：</p>
+<pre><code class="javascript">if (device-width &gt; ui-width) {
+    font-size: 100px;
+} else {
+    font-size: device-width * 100 / ui-width
+}
+</code></pre>
+<pre><code>设计稿: 640px(iphone 6p)
+按钮: 120px;
+屏幕尺寸: 500px;
+
+计算：
+font-size: 500 * 100 / 640;
+button-width: 1.2rem( = 1.2 * 500 * 100 / 640 = 93.75px)
+</code></pre><h2 id="字体"><a href="#字体" class="headerlink" title="字体"></a>字体</h2><p>字体不同于布局，自己不能随着尺寸变化而变化，或者说，只能大，不能小，因为太小了根本看不着，淘宝的字体大小是固定的。</p>
+<h2 id="Ratio-问题"><a href="#Ratio-问题" class="headerlink" title="Ratio 问题"></a>Ratio 问题</h2><p>还有一个问题，在不同的ratio下，1px的感觉是不一样的，比如，在一个ratio = 2 的分辨率下，会用两个像素点来作为1px<br>对图片的影响比较大，如果在一个100x100px的地方，放一个100x100px的图，在ration=1的情况下没问题，但是在ratio=2的情况下，就会显示模糊了，当然了，这个与标尺无关，需要提供额外的资源</p>
+<pre><code class="javascript">window.devicePixelRatio; // mac 显示 为 2
+</code></pre>
+<h2 id="CODE"><a href="#CODE" class="headerlink" title="CODE"></a>CODE</h2><pre><code class="html">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no&quot;&gt;
+    &lt;title&gt;REM&lt;/title&gt;
+    &lt;style&gt;
+        .btn-320 {
+            width: 3.2rem;
+            font-size: 14px;
+        }
+    &lt;/style&gt;
+    &lt;script&gt;
+        var html = document.getElementsByTagName(&#39;html&#39;)[0];
+        var width = html.clientWidth;
+        var base = width &gt; 1200 ? (1200 * 100 / 640) : (width * 100 / 640);
+        html.style.fontSize = base + &#39;px&#39;;
+    &lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div class=&quot;btn-320&quot;&gt;button 320px&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+]]></content>
+    
+    <summary type="html">
+    
+      从设计师手里拿到一张UI尺寸图，应该怎样转换为代码里的尺寸？应该怎样保证不同尺寸屏幕下的体验一致？
+    
+    </summary>
+    
+      <category term="术" scheme="http://www.zhaobao.site/categories/%E6%9C%AF/"/>
+    
+    
+      <category term="前端" scheme="http://www.zhaobao.site/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+      <category term="UI" scheme="http://www.zhaobao.site/tags/UI/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>扯·hello</title>
+    <link href="http://www.zhaobao.site/2016/03/18/che-hello/"/>
+    <id>http://www.zhaobao.site/2016/03/18/che-hello/</id>
+    <published>2016-03-18T15:45:11.000Z</published>
+    <updated>2016-09-17T16:37:09.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>:-) 侧着的笑脸,这是程序员向这个world说hello的方式</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;:-) 侧着的笑脸,这是程序员向这个world说hello的方式&lt;/p&gt;
+
+    
+    </summary>
+    
+      <category term="扯" scheme="http://www.zhaobao.site/categories/%E6%89%AF/"/>
+    
+    
+      <category term="扯淡" scheme="http://www.zhaobao.site/tags/%E6%89%AF%E6%B7%A1/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>图·生命是一场修行</title>
+    <link href="http://www.zhaobao.site/2016/03/17/tu-xiuxing/"/>
+    <id>http://www.zhaobao.site/2016/03/17/tu-xiuxing/</id>
+    <published>2016-03-17T15:46:55.000Z</published>
+    <updated>2016-10-22T16:35:04.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>生命是一场修行,太多的人生道理,每个人都知道,但是却做不到,因为修行不够;有些道理,只有经历了,才能懂得…<br><img src="/images/upload/xiuxing.jpg" alt="修行720"><br><a id="more"></a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;生命是一场修行,太多的人生道理,每个人都知道,但是却做不到,因为修行不够;有些道理,只有经历了,才能懂得…&lt;br&gt;&lt;img src=&quot;/images/upload/xiuxing.jpg&quot; alt=&quot;修行720&quot;&gt;&lt;br&gt;
+    
+    </summary>
+    
+      <category term="图" scheme="http://www.zhaobao.site/categories/%E5%9B%BE/"/>
+    
+    
+      <category term="好图" scheme="http://www.zhaobao.site/tags/%E5%A5%BD%E5%9B%BE/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>歌·你带给我的</title>
+    <link href="http://www.zhaobao.site/2016/03/17/ge-ndgwd/"/>
+    <id>http://www.zhaobao.site/2016/03/17/ge-ndgwd/</id>
+    <published>2016-03-17T02:19:34.000Z</published>
+    <updated>2016-09-17T16:37:16.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>你带给我的·任静静</p>
+<p>是拥抱吧 也许是心跳<br>一念之间 我忘不掉<br>是守候吧 也许是远走<br>牵你的手 我便拥有<br>推开窗 看见光<br>看见精彩 的绽放<br><a id="more"></a><br>从未有过 的波浪<br>敲敲打打 在心上<br>与你走过 每一个远方<br>奇迹出现的地方<br>你的模样 是我最精彩的 力量<br>推开窗 看见光<br>看见精彩 的绽放<br>从未有过 的波浪<br>敲敲打打 在心上<br>与你走过 每一个远方<br>奇迹出现的地方<br>你的模样 是我最精彩的 力量</p>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="http://music.163.com/outchain/player?type=2&id=39635615&auto=1&height=66"></iframe>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;你带给我的·任静静&lt;/p&gt;
+&lt;p&gt;是拥抱吧 也许是心跳&lt;br&gt;一念之间 我忘不掉&lt;br&gt;是守候吧 也许是远走&lt;br&gt;牵你的手 我便拥有&lt;br&gt;推开窗 看见光&lt;br&gt;看见精彩 的绽放&lt;br&gt;
+    
+    </summary>
+    
+      <category term="歌" scheme="http://www.zhaobao.site/categories/%E6%AD%8C/"/>
+    
+    
+      <category term="歌曲" scheme="http://www.zhaobao.site/tags/%E6%AD%8C%E6%9B%B2/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>无·Init</title>
+    <link href="http://www.zhaobao.site/2016/03/16/wu-init/"/>
+    <id>http://www.zhaobao.site/2016/03/16/wu-init/</id>
+    <published>2016-03-16T10:57:44.000Z</published>
+    <updated>2016-09-17T16:37:41.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>最近悟了一些东西,重新开始写博客,这个博客系统是托管在Github上的,感谢Nodejs, Markdown, Github, Git, Hexo…</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;最近悟了一些东西,重新开始写博客,这个博客系统是托管在Github上的,感谢Nodejs, Markdown, Github, Git, Hexo…&lt;/p&gt;
+
+    
+    </summary>
+    
+      <category term="无" scheme="http://www.zhaobao.site/categories/%E6%97%A0/"/>
+    
+    
+  </entry>
+  
+</feed>
