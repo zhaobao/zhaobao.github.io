@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.zhaobao.site/"/>
-  <updated>2016-10-24T01:38:29.000Z</updated>
+  <updated>2016-10-24T02:52:51.000Z</updated>
   <id>http://www.zhaobao.site/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://www.zhaobao.site/2016/10/22/shu-uploader/"/>
     <id>http://www.zhaobao.site/2016/10/22/shu-uploader/</id>
     <published>2016-10-22T09:30:42.000Z</published>
-    <updated>2016-10-24T01:38:29.000Z</updated>
+    <updated>2016-10-24T02:52:51.000Z</updated>
     
     <content type="html"><![CDATA[<p>浏览器默认的上传确实很丑。<br>来来回回也折腾过好几次上传了，本人有点强迫症，要么是觉得UI不够理想，要么是支持类型和功能不全，要么是第三方的插件太重，甚至还有些收费的，也是醉了。<br>在<code>IE6</code>占优比较大的时候，自己写一个上传确实很麻烦，甚至还需要用<code>Flash</code>来做辅助，比较经典的，比如<a href="http://www.uploadify.com/" target="_blank" rel="external"> uploadify </a>; 不过这几年好多了，随着<code>H5</code>的普及和移动互联网的普及，兼容性这个问题反而不是问题了，这是个好事，至少可以把主力放到体验和逻辑上，而不是没有意义的兼容性上。</p>
 <a id="more"></a>
@@ -37,6 +37,7 @@
 </ul>
 <h4 id="浏览器市场份额"><a href="#浏览器市场份额" class="headerlink" title="浏览器市场份额"></a>浏览器市场份额</h4><p><a href="http://tongji.baidu.com/data/browser" target="_blank" rel="external">百度统计</a>，我就想呵呵了，这里面没有<code>360</code>，这是不科学的。<br><img src="/images/upload/uploader/baidu.png" alt="百度"><br><a href="http://www.netmarketshare.com/" target="_blank" rel="external">NetMarketShare</a> 统计<br><img src="/images/upload/uploader/net.png" alt="net"><br><a href="http://www.w3schools.com/browsers/default.asp" target="_blank" rel="external">W3C</a> 数据<br><img src="/images/upload/uploader/w3c.png" alt="w3c"></p>
 <p>从数据中可以看出，<code>Chrome</code>是越来越流行了，对我们前端人来说这是天大的好事啊， 因为<code>Google</code>是一家技术严谨的公司，各种标准的支持都很好。<code>IE6</code>，机会都没有了，<code>IE</code>里面也就<code>IE8</code>份额还是不错的，所以现在的一些主流的框架都是支持<code>IE8</code>的，当然，我这个还是没有到<code>IE8</code>的，具体在<code>IE8</code>上的效果自己还没有测试，等测试了补上试试。</p>
+<p>经过测试：支持<code>IE8</code></p>
 <h4 id="图片上传"><a href="#图片上传" class="headerlink" title="图片上传"></a>图片上传</h4><p>以下是演示<code>Demo</code>, 整体效果还不错，不论是嵌在<code>dialog</code>中使用，还是在<code>form</code>里使用，效果都还不错<br><img src="/images/upload/uploader/img-uploader.gif" alt="img uploader"></p>
 <p><a href="https://github.com/zhaobao/image-uploader" target="_blank" rel="external">源码地址</a></p>
 <h4 id="算是第二版的上传吧"><a href="#算是第二版的上传吧" class="headerlink" title="算是第二版的上传吧"></a>算是第二版的上传吧</h4><ul>
