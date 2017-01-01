@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.zhaobao.site/"/>
-  <updated>2017-01-01T14:02:23.000Z</updated>
+  <updated>2017-01-01T14:25:25.000Z</updated>
   <id>http://www.zhaobao.site/</id>
   
   <author>
@@ -20,9 +20,11 @@
     <link href="http://www.zhaobao.site/2017/01/01/vue-table/"/>
     <id>http://www.zhaobao.site/2017/01/01/vue-table/</id>
     <published>2017-01-01T14:00:10.000Z</published>
-    <updated>2017-01-01T14:02:23.000Z</updated>
+    <updated>2017-01-01T14:25:25.000Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="What-is-Vue-table"><a href="#What-is-Vue-table" class="headerlink" title="What is Vue-table"></a>What is Vue-table</h2><p>Vue-table is Vue component based on Vue, Bootstrap and Ramda, right now, it only support server-side.</p>
+    <content type="html"><![CDATA[<p>Vue-table is a Vue component based on Vue, Bootstrap and Ramda.</p>
+<a id="more"></a>
+<h2 id="What-is-Vue-table"><a href="#What-is-Vue-table" class="headerlink" title="What is Vue-table"></a>What is Vue-table</h2><p>Vue-table is a Vue component based on Vue, Bootstrap and Ramda.</p>
 <h2 id="Feature"><a href="#Feature" class="headerlink" title="Feature"></a>Feature</h2><ul>
 <li>pagination</li>
 <li>column filter</li>
@@ -164,7 +166,7 @@ npm run dev
     
     <summary type="html">
     
-      &lt;h2 id=&quot;What-is-Vue-table&quot;&gt;&lt;a href=&quot;#What-is-Vue-table&quot; class=&quot;headerlink&quot; title=&quot;What is Vue-table&quot;&gt;&lt;/a&gt;What is Vue-table&lt;/h2&gt;&lt;p&gt;Vue-table 
+      &lt;p&gt;Vue-table is a Vue component based on Vue, Bootstrap and Ramda.&lt;/p&gt;
     
     </summary>
     
