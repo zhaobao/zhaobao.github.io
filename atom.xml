@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.zhaobao.site/"/>
-  <updated>2017-01-01T14:25:25.000Z</updated>
+  <updated>2017-01-01T14:26:57.000Z</updated>
   <id>http://www.zhaobao.site/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://www.zhaobao.site/2017/01/01/vue-table/"/>
     <id>http://www.zhaobao.site/2017/01/01/vue-table/</id>
     <published>2017-01-01T14:00:10.000Z</published>
-    <updated>2017-01-01T14:25:25.000Z</updated>
+    <updated>2017-01-01T14:26:57.000Z</updated>
     
     <content type="html"><![CDATA[<p>Vue-table is a Vue component based on Vue, Bootstrap and Ramda.</p>
 <a id="more"></a>
@@ -124,7 +124,7 @@ export default {
 </ul>
 </li>
 </ul>
-<h2 id="Dependence"><a href="#Dependence" class="headerlink" title="Dependence"></a>Dependence</h2><p>-<a href="http://ramdajs.com/" target="_blank" rel="external">Ramda</a>, it’s awesome</p>
+<h2 id="Dependence"><a href="#Dependence" class="headerlink" title="Dependence"></a>Dependence</h2><p><a href="http://ramdajs.com/" target="_blank" rel="external">Ramda</a>, it’s awesome</p>
 <h2 id="Notice"><a href="#Notice" class="headerlink" title="Notice"></a>Notice</h2><p>If you want to test the demo locally, you should has your own server serve on <a href="http://127.0.0.1:8089" target="_blank" rel="external">http://127.0.0.1:8089</a><br>The demo response data is:</p>
 <pre><code>{
   &quot;actions&quot;: [
