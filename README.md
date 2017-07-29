@@ -1,5 +1,3 @@
-# Zel Space
-
 ## Hi
 
 > Nice to meet you.
