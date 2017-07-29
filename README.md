@@ -2,7 +2,7 @@
 
 ## Blog
 
-[2016.02.18 绘画作品：路飞](./source/lufei.md)
+- [2016.02.18 绘画作品：路飞](./source/lufei.md)
 
 ## Open Source
 
