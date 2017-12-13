@@ -1,8 +1,6 @@
 ## HEADER
 
-### ICON
-
-![img](./images/m.png)
+![img](./images/avatar.png)
 
 ## BODY
 
