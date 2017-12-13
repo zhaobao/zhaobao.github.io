@@ -1,5 +1,3 @@
-<h1>Zel</h1>
-
 ## HEADER
 
 ![img](./images/avatar.png)
